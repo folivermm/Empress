@@ -1,0 +1,47 @@
+.text-shadow {
+    text-shadow: 1px 1px 2px black, -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black;
+}
+
+@media (max-width: 1079px) {
+    .custom-bg-blue {
+        height: auto !important;
+        min-height: 18rem;
+        /* Increased initial height for smaller screens */
+        max-height: 25rem;
+        /* Adjust this value as necessary */
+    }
+
+    .custom-emily {
+        width: 23rem;
+        /* Smaller width for the image on smaller screens */
+        /* Keep the same top position as in larger screens to avoid dropping down */
+    }
+
+    .responsive-text {
+        font-size: .85rem;
+        /* Smaller font size for smaller screens (14px) */
+        line-height: 1.25rem;
+        /* Adjust line height for readability */
+    }
+}
+
+@media (min-width: 1080px) {
+    .custom-bg-blue {
+        min-height: 20rem;
+        /* Increased initial height for larger screens */
+        max-height: 30rem;
+        /* Adjust this value as necessary */
+    }
+
+    .custom-emily {
+        width: 24rem;
+        /* Original width for larger screens */
+    }
+
+    .responsive-text {
+        font-size: 1rem;
+        /* Original font size for larger screens (16px) */
+        line-height: 1.5rem;
+        /* Adjust line height for readability */
+    }
+}

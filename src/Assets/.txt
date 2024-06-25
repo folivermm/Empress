@@ -1,0 +1,164 @@
+// style={{ fontFamily: 'UnifrakturCook, cursive' }}
+
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Almendra:wght@700&display=swap" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet"> -->
+
+  <img src={syringe} alt="Syringe" className="max-w-full max-h-48 object-contain" />
+  <img src={gemBkGrn} alt="Back Gemmy Green" className="max-w-full max-h-48 object-contain" />
+
+      <img
+        src={munchie}
+        alt="Munchie"
+        className="absolute bottom-1 left-1/8 transform scale-50 translate-x-10 z-10"
+      />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <Headroom>
+        <nav className="bg-blue-300 bg-opacity-50 p-6 flex justify-between items-center h-20 z-10 absolute w-full">
+          <div className="flex-1 flex justify-start pl-16">
+            <Link to="/" className="text-3xl font-bold text-white font-josefin italic">
+              EMPRESS EXTRACTS
+            </Link>
+          </div>
+          <div className="flex-1 flex justify-end space-x-6 pr-20">
+            <Link to="/Gemmy's" className="text-lg text-white font-josefin font-light italic">Gemmy's</Link>
+            <Link to="/Education" className="text-lg text-white font-josefin font-light italic">Education</Link>
+            <Link to="/Testimonials" className="text-lg text-white font-josefin font-light italic">Testimonials</Link>
+            <Link to="/Contact" className="text-lg text-white font-josefin font-light italic">Contact</Link>
+          </div>
+        </nav>
+      </Headroom>
+
+
+
+
+
+
+
+import React, { useRef } from 'react';
+import Headroom from 'react-headroom';
+import { Link } from 'react-router-dom';
+import './custom.css';
+import emailjs from '@emailjs/browser';
+
+import coverHome from './Assets/three.jpg.jpg';
+import emily from './Assets/page_16.png';
+import gemmyLogo from './Assets/Gemmys-Logo.png'
+import award from './Assets/awards.png'
+import gemmy from './Assets/Gemmys.png'
+
+const Home: React.FC = () => {
+  return (
+    <div className="bg-black min-h-screen">
+      <Headroom>
+        <nav className="bg-blue-300 bg-opacity-50 p-6 flex justify-between items-center h-20 w-full">
+          <div className="flex-1 flex justify-start pl-16">
+            <Link to="/" className="text-3xl font-bold text-white font-josefin italic text-shadow">
+              EMPRESS EXTRACTS
+            </Link>
+          </div>
+          <div className="flex-1 flex justify-end space-x-6 pr-20">
+            <Link to="/Gemmy's" className="text-lg text-white font-josefin font-light italic text-shadow">Gemmy's</Link>
+            <Link to="/Education" className="text-lg text-white font-josefin font-light italic text-shadow">Education</Link>
+            <Link to="/Testimonials" className="text-lg text-white font-josefin font-light italic text-shadow">Testimonials</Link>
+            <Link to="/Contact" className="text-lg text-white font-josefin font-light italic text-shadow">Contact</Link>
+          </div>
+        </nav>
+      </Headroom>
+      <div
+        className="w-full h-screen bg-cover bg-center"
+        style={{ backgroundImage: `url(${coverHome})`, backgroundPosition: 'top' }}
+      ></div>
+      <div
+        className="absolute left-8 top-32 md:left-24 md:top-32 w-[90%] md:w-[85%] bg-black bg-opacity-90 p-4 z-9 custom-bg-blue"
+        style={{ paddingLeft: '12rem' }}
+      >
+        <p className="text-white responsive-text">
+          Emily Scarbrough is ...
+          <br /><br />
+          The heart of...
+        </p>
+      </div>
+      <img
+        src={emily}
+        alt="emily"
+        className="absolute left-8 top-28 md:left-14 md:top-28 custom-emily"
+      />
+      <div
+        className="w-full bg-cover flex items-center justify-center border-4 border-black"
+        style={{ height: '10rem', backgroundImage: `url(https://as1.ftcdn.net/v2/jpg/05/43/37/82/1000_F_543378228_geBD4iXXM47ixrsXVZmWb74ZfYVMgQ3j.jpg)` }}
+      >
+        <div className="text-white text-center text-5xl font-josefin text-shadow">
+          Empress Awards
+        </div>
+      </div>
+      <div
+        className="relative w-full h-screen bg-cover bg-center"
+        style={{ backgroundImage: `url(${award})`, backgroundPosition: 'bottom' }}
+      >
+        <div className="absolute inset-0 flex items-start justify-center bg-black bg-opacity-50 pt-10">
+          <p className="text-white text-center text-xl font-josefin leading-loose">
+            2016 4/20 First Place Best Wax<br />
+          </p>
+        </div>
+      </div>
+      <div
+        className="w-full bg-cover border-4"
+        style={{ height: '10rem', borderColor: '#107869', backgroundImage: `url(https://as1.ftcdn.net/v2/jpg/05/43/37/82/1000_F_543378228_geBD4iXXM47ixrsXVZmWb74ZfYVMgQ3j.jpg)` }}
+      ></div>
+      <div className="relative w-full bg-lime-100 flex items-center border-4" style={{ height: '10rem', borderColor: 'white' }}>
+        <img
+          src={gemmyLogo}
+          alt="Gemmy's Logo"
+          className="h-full object-contain ml-40"
+        />
+        <div className="absolute left-1/2 transform -translate-x-1/2 text-white text-center text-5xl font-josefin text-shadow">
+          Gemmy's Locations
+        </div>
+        <img
+          src={gemmy}
+          alt="Gemmy's"
+          className="ml-auto h-full object-contain mr-4"
+        />
+      </div>
+      <div
+        className="w-full bg-cover flex items-center justify-center border-4"
+        style={{ height: '10rem', borderColor: '#0EA5E9', backgroundImage: `url(https://www.shutterstock.com/image-vector/seamless-background-angled-white-paper-600nw-2232300125.jpg)` }}
+      >
+        <div className="text-white text-center text-5xl font-josefin text-shadow">
+          Contact
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Home;
