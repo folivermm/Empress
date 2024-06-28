@@ -41,21 +41,68 @@
 
 
 
-   <Headroom>
-        <nav className="bg-blue-300 bg-opacity-50 p-6 flex justify-between items-center h-20 z-10 absolute w-full">
-          <div className="flex-1 flex justify-start pl-16">
-            <Link to="/" className="text-3xl font-bold text-white font-josefin italic">
-              EMPRESS EXTRACTS
-            </Link>
-          </div>
-          <div className="flex-1 flex justify-end space-x-6 pr-20">
-            <Link to="/Gemmy's" className="text-lg text-white font-josefin font-light italic">Gemmy's</Link>
-            <Link to="/Education" className="text-lg text-white font-josefin font-light italic">Education</Link>
-            <Link to="/Testimonials" className="text-lg text-white font-josefin font-light italic">Testimonials</Link>
-            <Link to="/Contact" className="text-lg text-white font-josefin font-light italic">Contact</Link>
-          </div>
-        </nav>
-      </Headroom>
+
+
+
+import React from "react";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { Icon, DivIcon, point, LatLngTuple } from "leaflet";
+import "leaflet/dist/leaflet.css";
+import "./Maps.css";
+import "../Assets/pin.png";
+import MarkerClusterGroup from "react-leaflet-cluster";
+
+interface MarkerData {
+    geocode: LatLngTuple;
+    popUpL: string;
+}
+
+const Maps: React.FC = () => {
+    const markers: MarkerData[] = [
+        {
+            geocode: [48.86, 2.35222],
+            popUpL: "Hello, I am pop up 1"
+        },
+        {
+            geocode: [48.86, 2.35222],
+            popUpL: "Hello, I am pop up 2"
+        },
+        {
+            geocode: [48.86, 2.35222],
+            popUpL: "Hello, I am pop up 3"
+        }
+    ];
+
+    const customIcon = new Icon({
+        iconUrl: "../Assets/pin.png", // Make sure the path is correct
+        iconSize: [30, 38] as [number, number]
+    });
+
+    const createCustomClusterIcon = (cluster: any) => {
+        return new DivIcon({
+            html: `<div class="cluster-icon">${cluster.getChildCount()}</div>`,
+            className: "custom-marker-cluster",
+            iconSize: point(33, 33, true)
+        });
+    };
+
+    return (
+        <MapContainer center={{ lat: 48.8566, lng: 2.3522 }} zoom={12} style={{ height: "100vh", width: "100%" }}>
+            <TileLayer url='https://tile.openstreetmap.org/{z}/{x}/{y}.png' />
+            <MarkerClusterGroup chunkedLoading iconCreateFunction={createCustomClusterIcon}>
+                {markers.map((marker, index) => (
+                    <Marker key={index} position={marker.geocode} icon={customIcon}>
+                        <Popup>
+                            <h2>{marker.popUpL}</h2>
+                        </Popup>
+                    </Marker>
+                ))}
+            </MarkerClusterGroup>
+        </MapContainer>
+    );
+};
+
+export default Maps;
 
 
 
@@ -63,31 +110,51 @@
 
 
 
-import React, { useRef } from 'react';
-import Headroom from 'react-headroom';
-import { Link } from 'react-router-dom';
-import './custom.css';
-import emailjs from '@emailjs/browser';
 
-import coverHome from './Assets/three.jpg.jpg';
-import emily from './Assets/page_16.png';
-import gemmyLogo from './Assets/Gemmys-Logo.png'
-import award from './Assets/awards.png'
-import gemmy from './Assets/Gemmys.png'
+
+
+
+
+
+            <MapContainer center={{ lat: 37.85, lng: -122.25 }} zoom={11} style={{ height: "100vh", width: "80%" }}>
+
+
+
+
+    /* #e3fcec */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'-------------------------------------------------------
+
 
 const Home: React.FC = () => {
   return (
     <div className="bg-black min-h-screen">
-      <Headroom>
-        <nav className="bg-blue-300 bg-opacity-50 p-6 flex justify-between items-center h-20 w-full">
+      <Headroom disableInlineStyles>
+        <nav className="bg-blue-300 bg-opacity-50 p-6 flex justify-between items-center h-20 w-full headroom-nav">
           <div className="flex-1 flex justify-start pl-16">
             <Link to="/" className="text-3xl font-bold text-white font-josefin italic text-shadow">
               EMPRESS EXTRACTS
             </Link>
           </div>
           <div className="flex-1 flex justify-end space-x-6 pr-20">
-            <Link to="/Gemmy's" className="text-lg text-white font-josefin font-light italic text-shadow">Gemmy's</Link>
-            <Link to="/Education" className="text-lg text-white font-josefin font-light italic text-shadow">Education</Link>
+            <Link to="/Gemmys" className="text-lg text-white font-josefin font-light italic text-shadow">Gemmy's</Link>
             <Link to="/Testimonials" className="text-lg text-white font-josefin font-light italic text-shadow">Testimonials</Link>
             <Link to="/Contact" className="text-lg text-white font-josefin font-light italic text-shadow">Contact</Link>
           </div>
@@ -97,42 +164,10 @@ const Home: React.FC = () => {
         className="w-full h-screen bg-cover bg-center"
         style={{ backgroundImage: `url(${coverHome})`, backgroundPosition: 'top' }}
       ></div>
-      <div
-        className="absolute left-8 top-32 md:left-24 md:top-32 w-[90%] md:w-[85%] bg-black bg-opacity-90 p-4 z-9 custom-bg-blue"
-        style={{ paddingLeft: '12rem' }}
-      >
-        <p className="text-white responsive-text">
-          Emily Scarbrough is ...
-          <br /><br />
-          The heart of...
-        </p>
-      </div>
-      <img
-        src={emily}
-        alt="emily"
-        className="absolute left-8 top-28 md:left-14 md:top-28 custom-emily"
-      />
-      <div
-        className="w-full bg-cover flex items-center justify-center border-4 border-black"
-        style={{ height: '10rem', backgroundImage: `url(https://as1.ftcdn.net/v2/jpg/05/43/37/82/1000_F_543378228_geBD4iXXM47ixrsXVZmWb74ZfYVMgQ3j.jpg)` }}
-      >
-        <div className="text-white text-center text-5xl font-josefin text-shadow">
-          Empress Awards
-        </div>
-      </div>
-      <div
-        className="relative w-full h-screen bg-cover bg-center"
-        style={{ backgroundImage: `url(${award})`, backgroundPosition: 'bottom' }}
-      >
-        <div className="absolute inset-0 flex items-start justify-center bg-black bg-opacity-50 pt-10">
-          <p className="text-white text-center text-xl font-josefin leading-loose">
-            2016 4/20 First Place Best Wax<br />
-          </p>
-        </div>
-      </div>
+...
       <div
         className="w-full bg-cover border-4"
-        style={{ height: '10rem', borderColor: '#107869', backgroundImage: `url(https://as1.ftcdn.net/v2/jpg/05/43/37/82/1000_F_543378228_geBD4iXXM47ixrsXVZmWb74ZfYVMgQ3j.jpg)` }}
+        style={{ height: '8rem', borderColor: '#107869', backgroundImage: `url(https://as1.ftcdn.net/v2/jpg/05/43/37/82/1000_F_543378228_geBD4iXXM47ixrsXVZmWb74ZfYVMgQ3j.jpg)` }}
       ></div>
       <div className="relative w-full bg-lime-100 flex items-center border-4" style={{ height: '10rem', borderColor: 'white' }}>
         <img
@@ -149,14 +184,198 @@ const Home: React.FC = () => {
           className="ml-auto h-full object-contain mr-4"
         />
       </div>
+      <Maps />
       <div
         className="w-full bg-cover flex items-center justify-center border-4"
-        style={{ height: '10rem', borderColor: '#0EA5E9', backgroundImage: `url(https://www.shutterstock.com/image-vector/seamless-background-angled-white-paper-600nw-2232300125.jpg)` }}
+        style={{ height: '8rem', borderColor: '#0EA5E9', backgroundImage: `url(https://www.shutterstock.com/image-vector/seamless-background-angled-white-paper-600nw-2232300125.jpg)` }}
       >
         <div className="text-white text-center text-5xl font-josefin text-shadow">
           Contact
         </div>
       </div>
+      <ContactUs />
+    </div>
+  );
+};
+
+export default Home;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const Home: React.FC = () => {
+  return (
+    <div className="bg-black min-h-screen">
+      <Headroom disableInlineStyles>
+        <nav className="bg-blue-300 bg-opacity-50 p-6 flex justify-between items-center h-20 w-full headroom-nav">
+          <div className="flex-1 flex justify-start pl-16">
+            <Link to="/" className="text-3xl font-bold text-white font-josefin italic text-shadow">
+              EMPRESS EXTRACTS
+            </Link>
+          </div>
+          <div className="flex-1 flex justify-end space-x-6 pr-20">
+            <Link to="/Gemmys" className="text-lg text-white font-josefin font-light italic text-shadow">Gemmy's</Link>
+            <Link to="/Testimonials" className="text-lg text-white font-josefin font-light italic text-shadow">Testimonials</Link>
+            <Link to="/Contact" className="text-lg text-white font-josefin font-light italic text-shadow">Contact</Link>
+          </div>
+        </nav>
+      </Headroom>
+      <div
+        className="w-full h-screen bg-cover bg-center"
+        style={{ backgroundImage: `url(${coverHome})`, backgroundPosition: 'top' }}
+      ></div>
+      <div
+        className="absolute left-8 top-32 md:left-24 md:top-32 w-[90%] md:w-[85%] bg-black bg-opacity-90 p-4 z-9 custom-bg-blue"
+        style={{ paddingLeft: '12rem' }}
+      >
+        <p className="text-white responsive-text">
+          Emily Scarbrough is a ...
+          <br /><br />
+          The heart of Empress ...
+        </p>
+      </div>
+      <img
+        src={emily}
+        alt="emily"
+        className="absolute left-8 top-28 md:left-14 md:top-28 custom-emily"
+      />
+      <div
+        className="w-full bg-cover flex items-center justify-center border-4 border-black"
+        style={{ height: '8rem', backgroundImage: `url(https://as1.ftcdn.net/v2/jpg/05/43/37/82/1000_F_543378228_geBD4iXXM47ixrsXVZmWb74ZfYVMgQ3j.jpg)` }}
+      >
+        <div className="text-white text-center text-5xl font-josefin text-shadow">
+          Empress Awards
+        </div>
+      </div>
+      <div
+        className="relative w-full h-screen bg-cover bg-center"
+        style={{ backgroundImage: `url(${award})`, backgroundPosition: 'bottom' }}
+      >
+        <div className="absolute inset-0 flex items-start justify-center bg-black bg-opacity-50 pt-10">
+          <p className="text-white text-center text-2xl font-josefin leading-loose">
+            2016 4/20 First Place Best Wax<br />
+           ...
+          </p>
+        </div>
+      </div>
+      <div
+        className="w-full bg-cover border-4"
+        style={{ height: '8rem', borderColor: '#107869', backgroundImage: `url(https://as1.ftcdn.net/v2/jpg/05/43/37/82/1000_F_543378228_geBD4iXXM47ixrsXVZmWb74ZfYVMgQ3j.jpg)` }}
+      ></div>
+      <div className="relative w-full bg-lime-100 flex items-center border-4" style={{ height: '10rem', borderColor: 'white' }}>
+        <img
+          src={gemmyLogo}
+          alt="Gemmy's Logo"
+          className="h-full object-contain ml-40"
+        />
+        <div className="absolute left-1/2 transform -translate-x-1/2 text-white text-center text-5xl font-josefin text-shadow">
+          Gemmy's Locations
+        </div>
+        <img
+          src={gemmy}
+          alt="Gemmy's"
+          className="ml-auto h-full object-contain mr-4"
+        />
+      </div>
+      <Maps />
+      <div
+        className="w-full bg-cover flex items-center justify-center border-4"
+        style={{ height: '8rem', borderColor: '#0EA5E9', backgroundImage: `url(https://www.shutterstock.com/image-vector/seamless-background-angled-white-paper-600nw-2232300125.jpg)` }}
+      >
+        <div className="text-white text-center text-5xl font-josefin text-shadow">
+          Contact
+        </div>
+      </div>
+      <ContactUs />
     </div>
   );
 };

@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // import './App.css';
 import Home from './Home/Home';
 import Gemmy from './Gemmys/Gemmy'
-import Education from './Education/Education'
+import Testimonials from './Education/Testimonials'
+import Contact from './Contact_Page/Contact'
 
 const App: FC = () => {
   return (
@@ -12,8 +13,8 @@ const App: FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Gemmys" element={<Gemmy />} />
-          <Route path="/Education/Testimonials" element={<Education />} />
-          {/* Add more routes here */}
+          <Route path="/Testimonials" element={<Testimonials />} />
+          <Route path="/Contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>

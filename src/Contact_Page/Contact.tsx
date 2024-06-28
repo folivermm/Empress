@@ -1,13 +1,12 @@
 import React from 'react';
 import Headroom from 'react-headroom';
 import { Link } from 'react-router-dom';
-import baloo from '../Assets/baloo.jpg'
-import Carousel from './Carousel';
-import trifold from '../Assets/Gemmys_trifold.jpg';
-import syringes from '../Assets/syringes.png';
-import '../Nav.css'
+import farm from '../Assets/contact-farm.png';
+import '../Nav.css';
+import { ContactUs } from '../ContactUs';
+import heartsG from '../Assets/green-hearts.jpg';
 
-const Gemmy: React.FC = () => {
+const Contact: React.FC = () => {
     return (
         <div className="bg-black min-h-screen">
             <Headroom disableInlineStyles>
@@ -25,27 +24,28 @@ const Gemmy: React.FC = () => {
                 </nav>
             </Headroom>
             <div
-                className="w-full h-screen bg-cover bg-center"
-                style={{ backgroundImage: `url(${baloo})` }}
-            ></div>
-            <Carousel />
-            <div className="relative flex justify-center items-center h-full bg-cyan-800">
-                <img
-                    src={trifold}
-                    alt="Trifold"
-                    className="max-w-full max-h-full"
-                />
+                className="w-full bg-cover flex items-center justify-center border-4"
+                style={{ height: '10rem', borderColor: '#CFFAFE', backgroundImage: `url(${heartsG})` }}
+            >
+                <div className="text-cyan-100 text-center text-6xl font-josefin text-shadow">
+                    Contact
+                </div>
             </div>
-            <div className="bg-slate-100 h-20 w-full border-4 border-indigo-300"></div>
-            <div className="flex justify-start bg-cyan-800">
-                <img
-                    src={syringes}
-                    alt="Syringes"
-                    className="max-w-xs max-h-full"
-                />
+            <div className="relative w-full h-screen bg-blue-400 bg-opacity-50 flex items-center">
+                <div className="relative flex-1 h-full flex items-center justify-center">
+                    <div className="absolute left-0 p-12 rounded shadow-lg w-full" style={{ zIndex: 1, maxWidth: '90%', marginLeft: '2rem' }}>
+                        <ContactUs className="bg-opacity-50" />
+                    </div>
+                    <img
+                        src={farm}
+                        alt="contact-farm"
+                        className="absolute right-0 h-full object-cover"
+                        style={{ zIndex: 0 }}
+                    />
+                </div>
             </div>
         </div>
     );
 };
 
-export default Gemmy;
+export default Contact;
