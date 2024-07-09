@@ -1,34 +1,24 @@
 import React from 'react';
-import Headroom from 'react-headroom';
-import { Link } from 'react-router-dom';
 import './custom.css';
 import { ContactUs } from '../ContactUs';
-import '../Nav.css'
+import Nav from '../Nav/Nav'
 import Maps from '../Map/Maps'
+import ImgRoll from './ImgRoll';
+import VideoRoll from './VideoRoll';
 
 import coverHome from '../Assets/three.jpg.jpg';
 import emily from '../Assets/page_16.png';
 import gemmyLogo from '../Assets/Gemmys-Logo.png'
 import award from '../Assets/awards.png'
 import gemmy from '../Assets/Gemmys.png'
+import gemmyMain from '../Assets/gemmys-white.png'
+import empressOpac from '../Assets/empress-transparent.png'
+import OakEquity from '../Assets/Equity.png'
 
 const Home: React.FC = () => {
   return (
-    <div className="bg-black min-h-screen">
-      <Headroom disableInlineStyles>
-        <nav className="bg-blue-300 bg-opacity-50 p-6 flex justify-between items-center h-20 w-full headroom-nav">
-          <div className="flex-1 flex justify-start pl-16">
-            <Link to="/" className="text-3xl font-bold text-white font-josefin italic text-shadow">
-              EMPRESS EXTRACTS
-            </Link>
-          </div>
-          <div className="flex-1 flex justify-end space-x-6 pr-20">
-            <Link to="/Gemmys" className="text-lg text-white font-josefin font-light italic text-shadow">Gemmy's</Link>
-            <Link to="/Testimonials" className="text-lg text-white font-josefin font-light italic text-shadow">Testimonials</Link>
-            <Link to="/Contact" className="text-lg text-white font-josefin font-light italic text-shadow">Contact</Link>
-          </div>
-        </nav>
-      </Headroom>
+    <div className="bg-black min-h-screen" >
+      <Nav />
       <div
         className="w-full h-screen bg-cover bg-center"
         style={{ backgroundImage: `url(${coverHome})`, backgroundPosition: 'top' }}
@@ -38,9 +28,9 @@ const Home: React.FC = () => {
         style={{ paddingLeft: '12rem' }}
       >
         <p className="text-white responsive-text">
-          Emily Scarbrough is a fifth generation Bay Area native that has been involved in the Medical Cannabis industry in the greater Bay Area since 2009. Emily is a mother and an award winning extract artist who founded Empress Extracts and Gemmy’s. Emily AKA Empress has large scale cultivation experience, brand building, networking and distribution experience along with a passion for the medicinal values of cannabis. Not only have her products brought in many awards in the past but Empress is currently working with the social network and focused on helping patients or people in the cannabis industry.
+          Emilly...
           <br /><br />
-          The heart of Empress Extracts is Gemmy’s RSO, which is a compassionate, holistic and medicinal product that has multiple first hand stories of various types of medical success. Gemmy’s RSO has brought Empress Extracts together with multiple organizations such as Operation EVAC, The Munchie Movement (which helps to feed the homeless), Compassion programs as well as other educational and support classes regarding cannabis and cancer. The mission of Emily and Empress Extracts is to provide compassionate and quality cannabis products to this amazing community while educating and supporting those in need.
+          The Heart...
         </p>
       </div>
       <img
@@ -48,6 +38,48 @@ const Home: React.FC = () => {
         alt="emily"
         className="absolute left-8 top-28 md:left-14 md:top-28 custom-emily"
       />
+      <div className="bottom-left">
+        <img
+          src={OakEquity}
+          alt="Oakland Equity"
+          className="w-1/3 md:w-1/6 p-2"
+        />
+        <img
+          src={gemmyMain}
+          alt="Gemmy's Logo"
+          className="w-1/3 md:w-1/6 p-2"
+        />
+        <img
+          src={empressOpac}
+          alt="Empress Logo"
+          className="w-1/3 md:w-1/12 p-2"
+        />
+      </div>
+      <div className="smaller-container">
+        <div className="features-title">Features in Magazines and Publications. Click Below...</div>
+        <div className="features-content">
+          <div className="feature-item">
+            <a href="https://issuu.com/dopemag/docs/dope_mag_norcal_web_august" target="_blank" className="underline">DOPE -</a> Aug 2016 p. 90-93
+          </div>
+          <div className="feature-item">
+            <a href="https://cannabisnow.com/year-globs-best-dabs-2017/7" target="_blank" className="underline">Cannabis Now -</a> The Best Dabs of 2017
+          </div>
+        </div>
+        <div className="features-content">
+          <div className="feature-item">
+            <a href="https://archive.hightimes.com/article/2018/11/1/100-women-is-high-places" target="_blank" className="underline">High Times -</a> 2018 High Times 100 Women in High Place
+          </div>
+          <div className="feature-item">
+            <a href="https://issuu.com/nwleaf/docs/californialeaf_july2021" target="_blank" className="underline">Leaf Nation -</a> July 2021 p.16
+          </div>
+        </div>
+        <div className="feature-item">
+          <a href="https://www.edrosenthal.com/edrosenthalstore/marijuana-harvest-maximizing-quality-yield-in-your-cannabis-garden" target="_blank" className="underline">"Marijuana Harvest"</a> by Ed Rosenthal
+        </div>
+      </div>
+
+
+
       <div
         className="w-full bg-cover flex items-center justify-center border-4 border-black"
         style={{ height: '8rem', backgroundImage: `url(https://as1.ftcdn.net/v2/jpg/05/43/37/82/1000_F_543378228_geBD4iXXM47ixrsXVZmWb74ZfYVMgQ3j.jpg)` }}
@@ -61,7 +93,7 @@ const Home: React.FC = () => {
         style={{ backgroundImage: `url(${award})`, backgroundPosition: 'bottom' }}
       >
         <div className="absolute inset-0 flex items-start justify-center bg-black bg-opacity-50 pt-10">
-          <p className="text-white text-center text-2xl font-josefin leading-loose">
+          <p className="text-white text-center text-2xl font-josefin leading-loose award-text">
             2016 4/20 First Place Best Wax<br />
             2016 4/20 Connoisseurs Choice of Concentrate<br />
             2016 Halloweed Cup: Best Booth<br />
@@ -75,10 +107,24 @@ const Home: React.FC = () => {
           </p>
         </div>
       </div>
+
+
+
+
       <div
         className="w-full bg-cover border-4"
-        style={{ height: '8rem', borderColor: '#107869', backgroundImage: `url(https://as1.ftcdn.net/v2/jpg/05/43/37/82/1000_F_543378228_geBD4iXXM47ixrsXVZmWb74ZfYVMgQ3j.jpg)` }}
-      ></div>
+        style={{
+          height: '25rem',
+          borderColor: '#107869',
+          backgroundImage: `url(https://as1.ftcdn.net/v2/jpg/05/43/37/82/1000_F_543378228_geBD4iXXM47ixrsXVZmWb74ZfYVMgQ3j.jpg)`
+        }}
+      >
+        <ImgRoll />
+      </div>
+
+      <div>
+        <VideoRoll />
+      </div>
       <div className="relative w-full bg-lime-100 flex items-center border-4" style={{ height: '10rem', borderColor: 'white' }}>
         <img
           src={gemmyLogo}

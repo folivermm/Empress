@@ -2,6 +2,92 @@
     text-shadow: 1px 1px 2px black, -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black;
 }
 
+/* bottom right container-publications */
+.bottom-left {
+    position: absolute;
+    bottom: -5rem;
+    left: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bottom-left img {
+    width: 12.5%;
+    padding: 0.5rem;
+}
+
+.smaller-container {
+    position: absolute;
+    bottom: -3.7rem;
+    right: .7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.5rem;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+
+.features-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-title {
+    font-weight: bold;
+}
+
+.feature-item {
+    flex: 1;
+    padding: 0.1rem;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.underline:hover {
+    color: gold;
+}
+
+.award-text {
+    font-size: 1.5rem;
+    line-height: 1.75;
+}
+
+@media (min-width: 1080px) {
+    .custom-bg-blue {
+        min-height: 20rem;
+        /* Increased initial height for larger screens */
+        max-height: 30rem;
+        /* Adjust this value as necessary */
+    }
+
+    .custom-emily {
+        width: 24rem;
+        /* Original width for larger screens */
+    }
+
+    .responsive-text {
+        font-size: 1rem;
+        /* Original font size for larger screens (16px) */
+        line-height: 1.5rem;
+        /* Adjust line height for readability */
+    }
+
+    .smaller-container {
+        width: 60%;
+        font-size: 0.8rem;
+    }
+
+}
+
 @media (max-width: 1079px) {
     .custom-bg-blue {
         height: auto !important;
@@ -25,23 +111,184 @@
     }
 }
 
-@media (min-width: 1080px) {
+@media (max-width: 1200px) {
     .custom-bg-blue {
-        min-height: 20rem;
-        /* Increased initial height for larger screens */
+        height: auto !important;
+        min-height: 25rem;
+        /* Increased initial height for smaller screens */
         max-height: 30rem;
         /* Adjust this value as necessary */
     }
 
-    .custom-emily {
-        width: 24rem;
-        /* Original width for larger screens */
+    .responsive-text {
+        font-size: .85rem;
+        /* Smaller font size for smaller screens (14px) */
+        line-height: 1.25rem;
+        /* Adjust line height for readability */
+    }
+
+    .smaller-container {
+        width: 60%;
+        font-size: 0.7rem;
+        bottom: -4rem
+    }
+}
+
+@media (max-width: 990px) {
+    .smaller-container {
+        width: 60%;
+        font-size: 0.6rem;
+    }
+}
+
+
+
+@media (max-width: 870px) {
+    .custom-bg-blue {
+        height: auto !important;
+        min-height: 25rem;
+        /* Increased initial height for smaller screens */
+        max-height: 30rem;
+        /* Adjust this value as necessary */
+        margin-left: -1.5rem;
     }
 
     .responsive-text {
-        font-size: 1rem;
-        /* Original font size for larger screens (16px) */
-        line-height: 1.5rem;
+        font-size: .85rem;
+        /* Smaller font size for smaller screens (14px) */
+        line-height: 1.25rem;
         /* Adjust line height for readability */
+    }
+
+    .custom-emily {
+        width: 20rem;
+        /* Smaller width for the image on smaller screens */
+        /* Keep the same top position as in larger screens to avoid dropping down */
+    }
+
+    .smaller-container {
+        width: 60%;
+        font-size: 0.5rem;
+        right: .5rem;
+
+    }
+}
+
+@media (max-width: 770px) {
+    .custom-bg-blue {
+        height: auto !important;
+        min-height: 25rem;
+        /* Increased initial height for smaller screens */
+        max-height: 30rem;
+        /* Adjust this value as necessary */
+        margin-left: 1rem;
+
+    }
+
+    .responsive-text {
+        font-size: .85rem;
+        /* Smaller font size for smaller screens (14px) */
+        line-height: 1.25rem;
+        /* Adjust line height for readability */
+    }
+
+    .smaller-container {
+        width: 60%;
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 769px) {
+    .custom-bg-blue {
+        height: auto !important;
+        min-height: 25rem;
+        /* Increased initial height for smaller screens */
+        max-height: 30rem;
+        /* Adjust this value as necessary */
+        margin-left: 1rem;
+
+    }
+
+    .responsive-text {
+        font-size: .85rem;
+        /* Smaller font size for smaller screens (14px) */
+        line-height: 1.25rem;
+        /* Adjust line height for readability */
+    }
+
+    .smaller-container {
+        width: 60%;
+        font-size: 0.4rem;
+        right: .5rem;
+
+    }
+}
+
+@media (max-width: 700px) {
+    .smaller-container {
+        width: 60%;
+        font-size: 0.45rem;
+    }
+}
+
+@media (max-width: 699px) {
+    .smaller-container {
+        width: 60%;
+        font-size: 0.45rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .custom-bg-blue {
+        height: auto !important;
+        min-height: 26rem;
+        /* Increased initial height for smaller screens */
+        max-height: 34rem;
+        /* Adjust this value as necessary */
+        margin-left: 1rem;
+
+    }
+
+    .responsive-text {
+        font-size: .85rem;
+        /* Smaller font size for smaller screens (14px) */
+        line-height: 1.25rem;
+        /* Adjust line height for readability */
+    }
+
+    .smaller-container {
+        width: 60%;
+        font-size: 0.4rem;
+    }
+
+    .award-text {
+        font-size: 1.25rem;
+        line-height: 2;
+    }
+}
+
+@media (max-width: 570px) {
+    .smaller-container {
+        width: 57%;
+        font-size: 0.4rem;
+    }
+
+    .award-text {
+        font-size: 1rem;
+        line-height: 2;
+    }
+}
+
+@media (max-width: 569px) {
+    .smaller-container {
+        width: 57%;
+        font-size: 0.3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .smaller-container {
+        width: 57%;
+        font-size: 0.25rem;
     }
 }

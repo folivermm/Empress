@@ -15,6 +15,76 @@
 
 
 
+          Emily Scarbrough is a fifth generation Bay Area native that has been involved in the Medical Cannabis industry in the greater Bay Area since 2009. Emily is a mother and an award winning extract artist who founded Empress Extracts and Gemmy’s. Emily AKA Empress has large scale cultivation experience, brand building, networking and distribution experience along with a passion for the medicinal values of cannabis. Not only have her products brought in many awards in the past but Empress is currently working with the social network and focused on helping patients or people in the cannabis industry.
+
+          The heart of Empress Extracts is Gemmy’s RSO, which is a compassionate, holistic and medicinal product that has multiple first hand stories of various types of medical success. Gemmy’s RSO has brought Empress Extracts together with multiple organizations such as Operation EVAC, The Munchie Movement (which helps to feed the homeless), Compassion programs as well as other educational and support classes regarding cannabis and cancer. The mission of Emily and Empress Extracts is to provide compassionate and quality cannabis products to this amazing community while educating and supporting those in need.
+
+
+
+import React from 'react';
+import Headroom from 'react-headroom';
+import { Link } from 'react-router-dom';
+import './custom.css';
+import { ContactUs } from '../ContactUs';
+import '../Nav.css'
+import Maps from '../Map/Maps'
+
+import coverHome from '../Assets/three.jpg.jpg';
+import emily from '../Assets/page_16.png';
+import gemmyLogo from '../Assets/Gemmys-Logo.png'
+import award from '../Assets/awards.png'
+import gemmy from '../Assets/Gemmys.png'
+import gemmyWhite from '../Assets/germmy-white.png'
+import empressOpac from '../Assets/empress-transparent.png'
+
+const Home: React.FC = () => {
+  return (
+    <div className="bg-black min-h-screen">
+      <Headroom disableInlineStyles>
+        <nav className="bg-blue-300 bg-opacity-50 p-6 flex justify-between items-center h-20 w-full headroom-nav">
+          <div className="flex-1 flex justify-start pl-16">
+            <Link to="/" className="text-3xl font-bold text-white font-josefin italic text-shadow">
+              EMPRESS EXTRACTS
+            </Link>
+          </div>
+          <div className="flex-1 flex justify-end space-x-6 pr-20">
+            <Link to="/Gemmys" className="text-lg text-white font-josefin font-light italic text-shadow">Gemmy's</Link>
+            <Link to="/Testimonials" className="text-lg text-white font-josefin font-light italic text-shadow">Testimonials</Link>
+            <Link to="/Contact" className="text-lg text-white font-josefin font-light italic text-shadow">Contact</Link>
+          </div>
+        </nav>
+      </Headroom>
+      <div
+        className="w-full h-screen bg-cover bg-center"
+        style={{ backgroundImage: `url(${coverHome})`, backgroundPosition: 'top' }}
+      ></div>
+      <div
+        className="absolute left-8 top-32 md:left-24 md:top-32 w-[90%] md:w-[85%] bg-black bg-opacity-90 p-4 z-9 custom-bg-blue"
+        style={{ paddingLeft: '12rem' }}
+      >
+        <p className="text-white responsive-text">
+          Emilly...
+          <br /><br />
+          The Heart...
+        </p>
+      </div>
+      <img
+        src={emily}
+        alt="emily"
+        className="absolute left-8 top-28 md:left-14 md:top-28 custom-emily"
+      />
+      <div className="bottom-left">
+        <img
+          src={empressOpac}
+          alt="Empress Logo"
+          className="w-1/4 md:w-1/8 p-2"
+        />
+        <img
+          src={gemmyWhite}
+          alt="Gemmy's Logo"
+          className="w-1/4 md:w-1/8 p-2"
+        />
+      </div>
 
 
 
@@ -35,74 +105,66 @@
 
 
 
+@media (max-width: 1079px) {
+    .custom-bg-blue {
+        height: auto !important;
+        min-height: 18rem;
+        /* Increased initial height for smaller screens */
+        max-height: 25rem;
+        /* Adjust this value as necessary */
+    }
 
+    .custom-emily {
+        width: 23rem;
+        /* Smaller width for the image on smaller screens */
+        /* Keep the same top position as in larger screens to avoid dropping down */
+    }
 
-
-
-
-
-
-
-
-import React from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import { Icon, DivIcon, point, LatLngTuple } from "leaflet";
-import "leaflet/dist/leaflet.css";
-import "./Maps.css";
-import "../Assets/pin.png";
-import MarkerClusterGroup from "react-leaflet-cluster";
-
-interface MarkerData {
-    geocode: LatLngTuple;
-    popUpL: string;
+    .responsive-text {
+        font-size: .85rem;
+        /* Smaller font size for smaller screens (14px) */
+        line-height: 1.25rem;
+        /* Adjust line height for readability */
+    }
 }
 
-const Maps: React.FC = () => {
-    const markers: MarkerData[] = [
-        {
-            geocode: [48.86, 2.35222],
-            popUpL: "Hello, I am pop up 1"
-        },
-        {
-            geocode: [48.86, 2.35222],
-            popUpL: "Hello, I am pop up 2"
-        },
-        {
-            geocode: [48.86, 2.35222],
-            popUpL: "Hello, I am pop up 3"
-        }
-    ];
+@media (min-width: 1080px) {
+    .custom-bg-blue {
+        min-height: 20rem;
+        /* Increased initial height for larger screens */
+        max-height: 30rem;
+        /* Adjust this value as necessary */
+    }
 
-    const customIcon = new Icon({
-        iconUrl: "../Assets/pin.png", // Make sure the path is correct
-        iconSize: [30, 38] as [number, number]
-    });
+    .custom-emily {
+        width: 24rem;
+        /* Original width for larger screens */
+    }
 
-    const createCustomClusterIcon = (cluster: any) => {
-        return new DivIcon({
-            html: `<div class="cluster-icon">${cluster.getChildCount()}</div>`,
-            className: "custom-marker-cluster",
-            iconSize: point(33, 33, true)
-        });
-    };
+    .responsive-text {
+        font-size: 1rem;
+        /* Original font size for larger screens (16px) */
+        line-height: 1.5rem;
+        /* Adjust line height for readability */
+    }
+}
 
-    return (
-        <MapContainer center={{ lat: 48.8566, lng: 2.3522 }} zoom={12} style={{ height: "100vh", width: "100%" }}>
-            <TileLayer url='https://tile.openstreetmap.org/{z}/{x}/{y}.png' />
-            <MarkerClusterGroup chunkedLoading iconCreateFunction={createCustomClusterIcon}>
-                {markers.map((marker, index) => (
-                    <Marker key={index} position={marker.geocode} icon={customIcon}>
-                        <Popup>
-                            <h2>{marker.popUpL}</h2>
-                        </Popup>
-                    </Marker>
-                ))}
-            </MarkerClusterGroup>
-        </MapContainer>
-    );
-};
 
-export default Maps;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -224,7 +286,78 @@ export default Home;
 
 
 
-
+    {
+        geocode: [37.7806, -122.471],
+        popupText: "Urbana",
+        address: "4811 Geary Blvd, San Francisco, CA 94118",
+        imageUrl: Urbana,
+        website: "www.urbananow.com",
+        phone: "(415) 702-6767"
+    },
+    {
+        geocode: [37.7823, -122.4077],
+        popupText: "Barbary Coast",
+        address: "952 Mission St, San Francisco, CA 94103",
+        imageUrl: "https://lh5.googleusercontent.com/p/AF1QipMk5CE11LXIB19Uw9asQ3hQKyoMfFeYpfLst9Ea=w408-h306-k-no",
+        website: "www.barbarycoastsf.com",
+        phone: "(415) 243-4400"
+    },
+    {
+        geocode: [37.9655, -122.3141], //Urban Soyal, El Sobrante 
+        popupText: "Urban Soyal Cannabis Club",
+        address: "3823 San Pablo Dam Rd, El Sobrante, CA 94803",
+        imageUrl: "https://lh5.googleusercontent.com/p/AF1QipMflkxmSq1m5AEJHEtfgLIZUFR8TdhudWw6jFrr=w408-h544-k-no",
+        website: "www.urbansoyal.com",
+        phone: "(510) 275-9571"
+    },
+    {
+        geocode: [37.8998, -122.3094], //7Stars Holistic Health center, Richmond
+        popupText: "7 Stars Holistic Healing Center",
+        address: "3219 Pierce St, Richmond, CA 94804",
+        imageUrl: "https://lh5.googleusercontent.com/p/AF1QipOSsryUGjzUz8E92fIWGhvrxMz9i9GBz0UBLDq6=w408-h269-k-no",
+        website: "www.7starshhc.com",
+        phone: "(510) 527-7827"
+    },
+    {
+        geocode: [37.8659, -122.2584], //Hi-Fidelity Berkeley
+        popupText: "Hi-Fidelity Cannabis Dispensary",
+        address: "2465 Telegraph Ave, Berkeley, CA 94704",
+        imageUrl: "https://lh5.googleusercontent.com/p/AF1QipO5fWwauKNkzJTO4p5QJdx-sfF59mlYtQ3OKEq4=w408-h242-k-no",
+        website: "www.hifigreen.com",
+        phone: "(510) 838-2400"
+    },
+    {
+        geocode: [37.8014, -122.2183], //KANA OAK
+        popupText: "KANNA Weed Dispensary Oakland",
+        address: "2019 MacArthur Blvd. Oakland, CA 94602",
+        imageUrl: "https://lh5.googleusercontent.com/p/AF1QipPh3bOgynCKhyQpO0TvCnjEWcROXl5WtNsUG7uQ=w456-h240-k-no",
+        website: "www.kannaoak.com",
+        phone: "(510) 447-1706"
+    },
+    {
+        geocode: [37.7841, -122.2424], //Harborside OAK
+        popupText: "Harborside Oakland Dispensary",
+        address: "1840 Embarcadero, Oakland, CA 94606",
+        imageUrl: "https://lh5.googleusercontent.com/p/AF1QipOKXCAihEb7tlfbsco2u0Oim3t3ucAdPMN-VvYY=w425-h240-k-no",
+        website: "www.shopharborside.com",
+        phone: "(888) 994-2726"
+    },
+    {
+        geocode: [37.7037, -122.1688], //Blum San Leandro 
+        popupText: "Blüm San Leandro Cannabis Dispensary",
+        address: "1915 Fairway Dr, San Leandro, CA 94577",
+        imageUrl: Blum,
+        website: "www.letsblum.com",
+        phone: "(510) 903-3443"
+    },
+    {
+        geocode: [37.6732, -122.0826], //Cookies Hayward
+        popupText: "Cookies Hayward Dispensary",
+        address: "1004 B St, Hayward, CA 94541",
+        imageUrl: "https://lh5.googleusercontent.com/p/AF1QipNOizOmE0PdGtAPVyXHwydwLtJNQgk4n42t4WFv=w408-h894-k-no",
+        website: "www.cookieshayward.com",
+        phone: "(510) 362-7040"
+    },
 
 
 
