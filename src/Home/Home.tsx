@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './custom.css';
 import { ContactUs } from '../ContactUs';
 import Nav from '../Nav/Nav'
@@ -14,6 +15,7 @@ import gemmy from '../Assets/Gemmys.png'
 import gemmyMain from '../Assets/gemmys-white.png'
 import empressOpac from '../Assets/empress-transparent.png'
 import OakEquity from '../Assets/Equity.png'
+import soloStand from '../Assets/solo-stand.jpeg'
 
 const Home: React.FC = () => {
   return (
@@ -56,7 +58,7 @@ const Home: React.FC = () => {
         />
       </div>
       <div className="smaller-container">
-        <div className="features-title">Features in Magazines and Publications. Click Below...</div>
+        <div className="features-title">Featured in Magazines and Publications. Click Below...</div>
         <div className="features-content">
           <div className="feature-item">
             <a href="https://issuu.com/dopemag/docs/dope_mag_norcal_web_august" target="_blank" className="underline">DOPE -</a> Aug 2016 p. 90-93
@@ -107,10 +109,6 @@ const Home: React.FC = () => {
           </p>
         </div>
       </div>
-
-
-
-
       <div
         className="w-full bg-cover border-4"
         style={{
@@ -126,11 +124,13 @@ const Home: React.FC = () => {
         <VideoRoll />
       </div>
       <div className="relative w-full bg-lime-100 flex items-center border-4" style={{ height: '10rem', borderColor: 'white' }}>
-        <img
-          src={gemmyLogo}
-          alt="Gemmy's Logo"
-          className="h-full object-contain ml-40"
-        />
+        <Link to="/Gemmys" style={{ display: 'flex', alignItems: 'center', height: '100%', marginLeft: '5rem' }}>
+          <img
+            src={gemmyLogo}
+            alt="Gemmy's Logo"
+            className="h-full object-contain"
+          />
+        </Link>
         <div className="absolute left-1/2 transform -translate-x-1/2 text-white text-center text-5xl font-josefin text-shadow">
           Gemmy's Locations
         </div>
@@ -143,15 +143,30 @@ const Home: React.FC = () => {
       <div style={{ position: 'relative', zIndex: 1 }}>
         <Maps />
       </div>
-      <div
-        className="w-full bg-cover flex items-center justify-center border-4"
-        style={{ height: '8rem', borderColor: '#0EA5E9', backgroundImage: `url(https://www.shutterstock.com/image-vector/seamless-background-angled-white-paper-600nw-2232300125.jpg)` }}
-      >
-        <div className="text-white text-center text-5xl font-josefin text-shadow">
-          Contact
+      <div className="bg-cyan-800 min-h-screen flex flex-col">
+        <div
+          className="w-full bg-cover flex items-center justify-center border-4"
+          style={{ height: '10rem', borderColor: '#0EA5E9', backgroundImage: `url(https://www.shutterstock.com/image-vector/seamless-background-angled-white-paper-600nw-2232300125.jpg)` }}
+        >
+          <div className="text-white text-center text-5xl font-josefin text-shadow">
+            Contact
+          </div>
+        </div>
+        <div className="flex flex-1 w-full">
+          <div className="flex-1 flex items-center justify-center relative p-4" style={{ paddingTop: '5rem' }}>
+            <img
+              src={soloStand}
+              alt="Solo Stand"
+              style={{ zIndex: 1, maxWidth: '85%', maxHeight: '85%', width: 'auto', height: 'auto' }}
+            />
+          </div>
+          <div className="flex-1 flex items-center justify-center p-4" style={{ paddingTop: '5rem', paddingRight: '.1rem' }}>
+            <div className="w-full h-full flex items-center justify-center">
+              <ContactUs />
+            </div>
+          </div>
         </div>
       </div>
-      <ContactUs />
     </div>
   );
 };
