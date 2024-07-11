@@ -34,14 +34,14 @@ const Carousel: React.FC = () => {
                         <div className="w-1/2 h-full bg-emerald-200 flex flex-col justify-start items-center text-black">
                             <div className="max-w-md mx-auto text-center p-6 mt-12">
                                 <h1 className="text-4xl font-bold mb-4">Heading 1</h1>
-                                <p className="text-lg">
+                                {/* <p className="text-lg">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus.
-                                </p>
+                                </p> */}
                             </div>
                         </div>
                         <div className="w-1/2 h-full bg-yellow-200 flex flex-col justify-start items-center text-black">
                             <div className="max-w-md mx-auto text-center p-6 mt-12">
-                                <h1 className="text-4xl font-bold mb-4">Heading 2</h1>
+                                {/* <h1 className="text-4xl font-bold mb-4">Heading 2</h1> */}
                                 <p className="text-lg">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus.
                                 </p>
@@ -82,7 +82,7 @@ const Carousel: React.FC = () => {
                             src={gemBkGrn}
                             alt="Back Gemmy Green"
                             className="max-w-full object-contain"
-                            style={{ maxHeight: '34rem' }} // Increased size
+                            style={{ maxHeight: '30rem' }} // Increased size
                         />
                     </div>
                 </SwiperSlide>
@@ -139,7 +139,7 @@ const Carousel: React.FC = () => {
                             src={gemBkOrg}
                             alt="Back Gemmy Green"
                             className="max-w-full object-contain"
-                            style={{ maxHeight: '34rem' }} // Increased size
+                            style={{ maxHeight: '30rem' }} // Increased size
                         />
                     </div>
                 </SwiperSlide>

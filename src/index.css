@@ -2,3 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+    @apply bg-[#59779a] h-full;
+    margin: 0;
+}

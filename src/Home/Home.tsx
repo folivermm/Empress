@@ -19,7 +19,7 @@ import soloStand from '../Assets/solo-stand.jpeg'
 
 const Home: React.FC = () => {
   return (
-    <div className="bg-black min-h-screen" >
+    <div className="min-h-screen" style={{ backgroundColor: '#59779a' }}>
       <Nav />
       <div
         className="w-full h-screen bg-cover bg-center"
@@ -143,12 +143,12 @@ const Home: React.FC = () => {
       <div style={{ position: 'relative', zIndex: 1 }}>
         <Maps />
       </div>
-      <div className="bg-cyan-800 min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#4b5a70' }}>
         <div
           className="w-full bg-cover flex items-center justify-center border-4"
           style={{ height: '10rem', borderColor: '#0EA5E9', backgroundImage: `url(https://www.shutterstock.com/image-vector/seamless-background-angled-white-paper-600nw-2232300125.jpg)` }}
         >
-          <div className="text-white text-center text-5xl font-josefin text-shadow">
+          <div className="text-white text-center text-6xl font-josefin text-shadow">
             Contact
           </div>
         </div>

@@ -6,7 +6,7 @@ import './Nav.css';
 const Nav: React.FC = () => {
     return (
         <Headroom disableInlineStyles>
-            <nav className="bg-blue-300 bg-opacity-50 p-6 flex justify-between items-center h-20 w-full headroom-nav">
+            <nav className="p-6 flex justify-between items-center h-20 w-full headroom-nav" style={{ backgroundColor: 'rgba(89, 119, 154, 0.5)' }}>
                 <div className="flex-1 flex justify-start pl-16">
                     <Link to="/" className="text-3xl font-bold text-white font-josefin italic text-shadow">
                         EMPRESS EXTRACTS

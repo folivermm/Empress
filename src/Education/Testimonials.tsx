@@ -1,19 +1,35 @@
 import React from 'react';
-import Headroom from 'react-headroom';
-import { Link } from 'react-router-dom';
-import trifold from '../Assets/Gemmys_trifold.jpg';
-import '../Nav/Nav.css'
-import Nav from '../Nav/Nav'
+import '../Nav/Nav.css';
+import './Testimonials.css';
+import Nav from '../Nav/Nav';
+
+const testimonials = [
+
+    {
+        text: "I was diagnosed with Actinic Keratosis when I was 20. Pretty Lame for someone so young to have these scaly red spots all over my face and arms. I’ve gone through many treatments for it. From creams to blue lights. All of which have pretty bad side effects and are painful. I started trying Gemmy’s topically for my face after yet another blue light treatment and I was surprised when it worked better than I could have hoped for! Much better than the last treatment I went through. The scaliness is greatly reduced and the redness has faded significantly. I’m so glad without the horrible side effects and pain as the other treatments I’ve been through.",
+        author: "Amy T."
+    },
+    {
+        text: "Gemm’ys Oil helps with anxiety and TBI headaches. In return it helps increase my appetite. My VA primary using cannabis over pharmaceuticals. Life is much better today",
+        author: "Guy Y."
+    },
+    {
+        text: "My mom was diagnosed with Stage 4 lung cancer 3 years ago. She was given 6 months or less to live. My mom would not still be here with us today if it wasn’t for Gemmy’s. For that I am certain of. I heard about the miracle medicine Gemmy’s through a good friend. And I am beyond grateful for this medicine and for giving true hope to patients.",
+        author: "Gianna C."
+    },
+];
+
 const Testimonials: React.FC = () => {
     return (
-        <div className="bg-black min-h-screen">
+        <div className="min-h-screen" style={{ backgroundColor: 'dark-grey' }}>
             <Nav />
-            <div className="relative flex justify-center items-center h-full bg-cyan-800">
-                <img
-                    src={trifold}
-                    alt="Trifold"
-                    className="max-w-full max-h-full"
-                />
+            <div className="testimonials-container">
+                {testimonials.map((testimonial, index) => (
+                    <div key={index} className="testimonial-card" style={{ backgroundColor: '#4b5a70' }}>
+                        <p className="testimonial-text">{testimonial.text}</p>
+                        <p className="testimonial-author">- {testimonial.author}</p>
+                    </div>
+                ))}
             </div>
         </div>
     );

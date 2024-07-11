@@ -114,9 +114,9 @@
 @media (max-width: 1200px) {
     .custom-bg-blue {
         height: auto !important;
-        min-height: 25rem;
+        min-height: 23rem;
         /* Increased initial height for smaller screens */
-        max-height: 30rem;
+        max-height: 23rem;
         /* Adjust this value as necessary */
     }
 
