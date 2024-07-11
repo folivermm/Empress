@@ -11,7 +11,7 @@ import gemmyLogo from '../Assets/gemmys-transparent.png';
 
 const Gemmy: React.FC = () => {
     return (
-        <div className="min-h-screen" style={{ backgroundColor: '#4b5a70' }}>
+        <div>
             <Nav />
             <div className="relative w-full h-screen bg-cover bg-center" style={{ backgroundImage: `url(${baloo})` }}>
                 <div className="absolute bottom-4 left-4 text-white p-4" style={{ fontFamily: 'Caveat Brush, cursive', fontSize: '2vw' }}>
@@ -20,7 +20,9 @@ const Gemmy: React.FC = () => {
                     <p>Gemmy's is not for consumption by animals.</p>
                 </div>
             </div>
-            <Carousel />
+            <div className="w-full h-full">
+                <Carousel />
+            </div>
             <div className="relative flex justify-center items-center h-full">
                 <img
                     src={trifold}

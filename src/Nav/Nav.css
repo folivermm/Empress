@@ -1,13 +1,31 @@
+.headroom-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4b5a70;
+}
+
 .headroom {
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.headroom--unfixed {
-    position: relative;
+.headroom--unfixed,
+.headroom--unpinned,
+.headroom--pinned {
+    position: fixed;
+    width: 100%;
+    background-color: #4b5a70;
+}
+
+.headroom--unpinned {
+    transform: translateY(0);
+}
+
+.headroom--pinned {
     transform: translateY(0);
 }
 
@@ -15,17 +33,6 @@
     transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.headroom--unpinned {
-    position: fixed;
-    transform: translateY(0);
-    /* Keep the navbar in view */
-    background-color: rgba(0, 0, 0, 0.1);
-    /* 50% opacity */
-}
-
-.headroom--pinned {
-    position: fixed;
-    transform: translateY(0);
-    background-color: rgba(0, 0, 0, 0.3);
-    /* 70% opacity */
+.whitespace-nowrap {
+    white-space: nowrap;
 }

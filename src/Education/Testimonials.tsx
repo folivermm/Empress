@@ -21,11 +21,11 @@ const testimonials = [
 
 const Testimonials: React.FC = () => {
     return (
-        <div className="min-h-screen" style={{ backgroundColor: 'dark-grey' }}>
+        <div>
             <Nav />
             <div className="testimonials-container">
                 {testimonials.map((testimonial, index) => (
-                    <div key={index} className="testimonial-card" style={{ backgroundColor: '#4b5a70' }}>
+                    <div key={index} className="testimonial-card" style={{ backgroundColor: '#343a40' }}>
                         <p className="testimonial-text">{testimonial.text}</p>
                         <p className="testimonial-author">- {testimonial.author}</p>
                     </div>

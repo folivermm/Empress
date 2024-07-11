@@ -6,6 +6,8 @@ import Nav from '../Nav/Nav'
 import Maps from '../Map/Maps'
 import ImgRoll from './ImgRoll';
 import VideoRoll from './VideoRoll';
+import Footer from '../Footer/Footer'
+
 
 import coverHome from '../Assets/three.jpg.jpg';
 import emily from '../Assets/page_16.png';
@@ -19,7 +21,7 @@ import soloStand from '../Assets/solo-stand.jpeg'
 
 const Home: React.FC = () => {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#59779a' }}>
+    <div>
       <Nav />
       <div
         className="w-full h-screen bg-cover bg-center"
@@ -167,6 +169,7 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
