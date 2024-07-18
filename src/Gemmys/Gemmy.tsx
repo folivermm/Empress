@@ -8,6 +8,8 @@ import Nav from '../Nav/Nav';
 import Maps from '../Map/Maps';
 import gemmy from '../Assets/Gemmys.png';
 import gemmyLogo from '../Assets/gemmys-transparent.png';
+import Footer from '../Footer/Footer'
+
 
 const Gemmy: React.FC = () => {
     return (
@@ -15,8 +17,8 @@ const Gemmy: React.FC = () => {
             <Nav />
             <div className="relative w-full h-screen bg-cover bg-center" style={{ backgroundImage: `url(${baloo})` }}>
                 <div className="absolute bottom-4 left-4 text-white p-4" style={{ fontFamily: 'Caveat Brush, cursive', fontSize: '2vw' }}>
-                    <p>Meet Baloo!
-                        <br /> #1 sales representative for Gemmy's.</p>
+                    <p>Meet Baloo
+                        <br /> #1 sales representative for Gemmy's!</p>
                     <p>Gemmy's is not for consumption by animals.</p>
                 </div>
             </div>
@@ -78,6 +80,7 @@ const Gemmy: React.FC = () => {
             <div style={{ position: 'relative', zIndex: 1 }}>
                 <Maps />
             </div>
+            <Footer />
         </div>
     );
 };

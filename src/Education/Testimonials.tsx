@@ -2,6 +2,8 @@ import React from 'react';
 import '../Nav/Nav.css';
 import './Testimonials.css';
 import Nav from '../Nav/Nav';
+import Footer from '../Footer/Footer'
+
 
 const testimonials = [
 
@@ -31,6 +33,7 @@ const Testimonials: React.FC = () => {
                     </div>
                 ))}
             </div>
+            <Footer />
         </div>
     );
 };

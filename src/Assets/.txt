@@ -496,7 +496,13 @@ export default Home;
 
 
 
-
+// import ImgRoll fro../About/ImgRolloll';
+// import coverHome from '../Assets/three.jpg.jpg';
+// import emily from '../Assets/page_16.png';
+// import gemmyMain from '../Assets/gemmys-white.png'
+// import empressOpac from '../Assets/empress-transparent.png'
+// import OakEquity from '../Assets/Equity.png'
+// import award from '../Assets/awards.png'
 
 
 

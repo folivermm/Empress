@@ -17,7 +17,7 @@ const VideoRoll = () => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            height: '25rem',
+            height: '35rem',
             width: '100%',
             overflow: 'hidden',
             position: 'relative',
