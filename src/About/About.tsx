@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './About.css';
-import { ContactUs } from '../ContactUs';
 import Nav from '../Nav/Nav'
 import ImgRoll from './ImgRoll'
+import AwardRoll from './AwardRoll'
 import Footer from '../Footer/Footer'
 
 
@@ -15,6 +15,7 @@ import gemmy from '../Assets/Gemmys.png'
 import gemmyMain from '../Assets/gemmys-white.png'
 import empressOpac from '../Assets/empress-transparent.png'
 import OakEquity from '../Assets/Equity.png'
+
 const About: React.FC = () => {
     return (
         <div>
@@ -92,8 +93,8 @@ const About: React.FC = () => {
                 className="relative w-full h-screen bg-cover bg-center"
                 style={{ backgroundImage: `url(${award})`, backgroundPosition: 'bottom' }}
             >
-                <div className="absolute inset-0 flex items-start justify-center bg-black bg-opacity-50 pt-7">
-                    <p className="text-white text-center text-2xl font-josefin award-text">
+                <div className="absolute inset-0 flex items-start justify-center bg-black bg-opacity-50">
+                    <p className="text-white text-center text-xl font-josefin award-text">
                         2016 4/20 First Place Best Wax<br />
                         2016 4/20 Connoisseurs Choice of Concentrate<br />
                         2016 Halloweed Cup: Best Booth<br />
@@ -107,6 +108,7 @@ const About: React.FC = () => {
                     </p>
                 </div>
             </div>
+            <AwardRoll />
             <div
                 className="w-full bg-cover border-4"
                 style={{
@@ -115,6 +117,7 @@ const About: React.FC = () => {
                     backgroundImage: `url(https://as1.ftcdn.net/v2/jpg/05/43/37/82/1000_F_543378228_geBD4iXXM47ixrsXVZmWb74ZfYVMgQ3j.jpg)`
                 }}
             >
+
                 <ImgRoll />
             </div>
             <Footer />

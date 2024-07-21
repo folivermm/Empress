@@ -1,0 +1,123 @@
+/* GemmyRoll.css */
+.full-slide {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin: -2rem;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-half {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+}
+
+.left-background {
+    left: 0;
+    background-color: #a7f3d0;
+    /* Equivalent to bg-emerald-200 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    /* Add padding to the content */
+}
+
+.right-background {
+    right: 0;
+    background-color: #fef3c7;
+    /* Equivalent to bg-yellow-200 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    /* Add padding to the content */
+}
+
+.center-content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Align items to the top */
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-top: 14rem;
+    /* Move the entire content down */
+}
+
+.right-image {
+    max-width: 40%;
+    margin-bottom: -8.5rem;
+}
+
+.right-header2 {
+    font-size: 1.5rem;
+    margin-bottom: 14rem;
+    color: #333;
+    width: 20rem;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+
+
+.syringe-image2 {
+    max-width: 32%;
+    max-height: 32%;
+    position: absolute;
+    top: -2.4rem;
+    /* Adjust to move the syringe behind the gemFrGrn */
+    z-index: 1;
+}
+
+.center-image2 {
+    max-width: 50%;
+    max-height: 50%;
+    margin-top: 6rem;
+    /* Adjust to move the gemFrGrn image down */
+    z-index: 2;
+}
+
+
+.left-header2 {
+    font-size: 1.5rem;
+    /* margin-top: 4rem; */
+    margin-bottom: 14rem;
+    color: #333;
+    width: 20rem;
+    font-style: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+.left-background2 {
+    left: 0;
+    background-color: #fef3c7;
+    /* Equivalent to bg-emerald-200 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    /* Add padding to the content */
+}
+
+.right-background2 {
+    right: 0;
+    background-color: #faa957;
+    /* Equivalent to bg-yellow-200 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    /* Add padding to the content */
+}

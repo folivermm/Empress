@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
-import grow from '../Assets/grow-vid.mp4';
+import grow from '../Assets/close-grow.mp4';
 import bud from '../Assets/bud-vid.mp4';
 import crystal from '../Assets/crystal-vid.mp4';
+import long from '../Assets/long-grow.mp4';
 
-const videos = [grow, bud, crystal];
+
+
+const videos = [grow, bud, crystal, long];
 
 const VideoRoll = () => {
     const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
