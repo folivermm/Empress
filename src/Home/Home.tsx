@@ -13,7 +13,6 @@ import gemmyTr from '../Assets/GemmysTransparent.png';
 
 import gemmy from '../Assets/Gemmys.png';
 import soloStand from '../Assets/solo-stand.jpeg';
-import empress from '../Assets/Empress-Purple.png';
 import empressTr from '../Assets/empress-transparent.png'
 import GemmyRoll from './GemmyRoll';
 

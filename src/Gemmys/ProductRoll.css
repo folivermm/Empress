@@ -79,9 +79,8 @@
 }
 
 .center-image2 {
-    max-width: 50%;
-    max-height: 50%;
-    margin-top: 6rem;
+
+    margin-top: 9.68rem;
     /* Adjust to move the gemFrGrn image down */
     z-index: 2;
 }

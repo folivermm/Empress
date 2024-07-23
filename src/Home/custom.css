@@ -66,3 +66,132 @@ html,
     height: 100%;
     width: 100%;
 }
+
+@media (max-width: 887px) {
+    .text1 {
+        top: calc(80% - 4rem);
+        font-size: 1.6rem;
+    }
+
+    .text2 {
+        top: calc(80% - 4rem);
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    img.overlay {
+        top: calc(44% - 4rem);
+    }
+
+    img.overlay2 {
+        top: calc(44% - 4rem);
+    }
+
+    .text1 {
+        top: calc(80% - 4rem);
+        font-size: 1.4rem;
+        /* Adjust the font size as needed */
+        padding: -.5rem;
+        margin-top: .5rem;
+    }
+
+    .text2 {
+        top: calc(80% - 4rem);
+        font-size: 1.4rem;
+        /* Adjust the font size as needed */
+        padding: -.5rem;
+        margin-top: .5rem;
+    }
+}
+
+@media (max-width: 681px) {
+    img.overlay {
+        top: calc(50% - 4rem);
+    }
+
+    img.overlay2 {
+        top: calc(50% - 4rem);
+    }
+
+    .text1 {
+        top: calc(80% - 4rem);
+        font-size: 1.2rem;
+    }
+
+    .text2 {
+        top: calc(80% - 4rem);
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 607px) {
+    img.overlay {
+        top: calc(40% - 4rem);
+    }
+
+    img.overlay2 {
+        top: calc(40% - 4rem);
+    }
+
+    .text1 {
+        top: calc(80% - 4rem);
+        font-size: 1.1rem;
+        margin-top: -4rem;
+    }
+
+    .text2 {
+        top: calc(80% - 4rem);
+        font-size: 1.1rem;
+        margin-top: -4rem;
+
+    }
+}
+
+@media (max-width: 548px) {
+    img.overlay {
+        top: calc(40% - 4rem);
+    }
+
+    img.overlay2 {
+        top: calc(40% - 4rem);
+    }
+
+    .text1 {
+        top: calc(80% - 4rem);
+        font-size: .9rem;
+        margin-top: -4rem;
+    }
+
+    .text2 {
+        top: calc(80% - 4rem);
+        font-size: .9rem;
+        margin-top: -4rem;
+
+    }
+
+}
+
+@media (max-width: 491px) {
+    img.overlay {
+        top: calc(40% - 4rem);
+    }
+
+    img.overlay2 {
+        top: calc(40% - 4rem);
+    }
+
+    .text1 {
+        top: calc(80% - 4rem);
+        font-size: .7rem;
+        margin-top: -6rem;
+    }
+
+    .text2 {
+        top: calc(80% - 4rem);
+        font-size: .7rem;
+        margin-top: -6rem;
+
+    }
+
+}

@@ -4,7 +4,7 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/module
 import gemFrGrn from '../Assets/front-gemmy-grn.jpg';
 import syringe from '../Assets/syringe-bk-u.png';
 import gemFrOrg from '../Assets/front-gemmy-org.jpg';
-import { Link } from 'react-router-dom';
+import ImageMagnifier from './ImageMagnifier';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -27,7 +27,7 @@ const ProductRoll: React.FC = () => {
         scrollbar={{ draggable: true }}
         loop={true}
         autoplay={{
-          delay: 4500,
+          delay: 5000,
           disableOnInteraction: false,
         }}
       >
@@ -47,7 +47,13 @@ const ProductRoll: React.FC = () => {
             </div>
             <div className="center-content2">
               <img src={syringe} alt="Syringe" className="syringe-image2" />
-              <img src={gemFrGrn} alt="Gem" className="center-image2" />
+              <ImageMagnifier
+                src={gemFrGrn}
+                width="40%"
+                height="auto"
+                zoomLevel={1.5}
+                className="center-image2"
+              />
             </div>
           </div>
         </SwiperSlide>
@@ -67,7 +73,13 @@ const ProductRoll: React.FC = () => {
             </div>
             <div className="center-content2">
               <img src={syringe} alt="Syringe" className="syringe-image2" />
-              <img src={gemFrOrg} alt="Gem" className="center-image2" />
+              <ImageMagnifier
+                src={gemFrOrg}
+                width="40%"
+                height="auto"
+                zoomLevel={1.5}
+                className="center-image2"
+              />
             </div>
           </div>
         </SwiperSlide>

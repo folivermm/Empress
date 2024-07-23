@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './About.css';
 import Nav from '../Nav/Nav'
 import ImgRoll from './ImgRoll'
@@ -9,9 +8,7 @@ import Footer from '../Footer/Footer'
 
 import coverHome from '../Assets/three.jpg.jpg';
 import emily from '../Assets/page_16.png';
-import gemmyLogo from '../Assets/Gemmys-Logo.png'
 import award from '../Assets/awards.png'
-import gemmy from '../Assets/Gemmys.png'
 import gemmyMain from '../Assets/gemmys-white.png'
 import empressOpac from '../Assets/empress-transparent.png'
 import OakEquity from '../Assets/Equity.png'
@@ -28,11 +25,19 @@ const About: React.FC = () => {
                 className="absolute left-8 top-32 md:left-24 md:top-32 w-[90%] md:w-[85%] bg-black bg-opacity-90 p-4 z-9 custom-bg-blue"
                 style={{ paddingLeft: '12rem' }}
             >
-                <p className="text-white responsive-text">
-                    Emilly...
-                    <br /><br />
-                    The Heart...
-                </p>
+                <div className="responsive-text text-white">
+                    <p>
+                        CEO and founder Emily Scarbrough created Empress Extracts in 2009. Empress Extracts is a legacy-operated, award-winning cannabis extraction company and has since been servicing the California medical cannabis market. The company has been producing a diverse, yet focused, array of medicinal cannabinoid extracts for the patients of the San Francisco Bay Area and beyond. Empress has a simple goal; to build a business around the extraction and isolation of the active medicinal compounds of the very best cannabis on earth, while improving the very same earth and people in doing so.
+                    </p>
+                    <br />
+                    <p>
+                        The heart and focus of Empress Extract products is Gemmy’s Full Extract Cannabis Oil. Full Extract Oil, also known as RSO, is a full-spectrum plant extract that has been used with success to treat many ailments, including but not limited to treating cancer, epilepsy, seizures, MS, chronic pain, sleep problems, arthritis, glaucoma, anxiety, depression, PTSD, TBI headaches, and so much more.
+                    </p>
+                    <br />
+                    <p>
+                        Emily AKA Empress is certified Oakland equity and has large-scale cultivation experience, brand building, networking, and distribution experience along with a passion for the medicinal values of cannabis. Emily’s uncompromising focus on consistently producing top-quality, accessible extracts suited to diverse patient needs has always been the bedrock of her foundation.
+                    </p>
+                </div>
             </div>
             <img
                 src={emily}
@@ -43,17 +48,17 @@ const About: React.FC = () => {
                 <img
                     src={OakEquity}
                     alt="Oakland Equity"
-                    className="w-1/3 md:w-1/6 p-2"
+                    className="oak-equity"
                 />
                 <img
                     src={gemmyMain}
                     alt="Gemmy's Logo"
-                    className="w-1/3 md:w-1/6 p-2"
+                    className="gemmy-main"
                 />
                 <img
                     src={empressOpac}
                     alt="Empress Logo"
-                    className="w-1/3 md:w-1/12 p-2"
+                    className="empress-opac"
                 />
             </div>
             <div className="smaller-container">
