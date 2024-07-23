@@ -129,3 +129,27 @@
 .reset-view-button:hover img {
     opacity: 0.8;
 }
+
+@media (max-width: 550px) {
+    .sidebar-item h2 {
+        margin: 0 0 5px 0;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    .sidebar-item p,
+    a {
+        margin: 0;
+        font-size: 7px;
+    }
+
+    .sidebar-header {
+        padding: 10px;
+        background-color: #ECFCCB;
+        /* bg-lime-100 */
+        color: black;
+        text-align: center;
+        font-size: 12px;
+
+    }
+}

@@ -60,12 +60,12 @@ const Home: React.FC = () => {
             Contact
           </div>
         </div>
-        <div className="flex flex-1 w-full">
-          <div className="flex-1 flex items-center justify-center relative p-4" style={{ paddingTop: '5rem' }}>
-            <img src={soloStand} alt="Solo Stand" style={{ zIndex: 1, maxWidth: '85%', maxHeight: '85%', width: 'auto', height: 'auto' }} />
+        <div className="flex flex-1 w-full responsive-container">
+          <div className="flex-1 flex items-center justify-center relative p-4 image-container" style={{ paddingTop: '7rem' }}>
+            <img src={soloStand} alt="Solo Stand" className="responsive-image" />
           </div>
-          <div className="flex-1 flex items-center justify-center p-4" style={{ paddingTop: '5rem', paddingRight: '.1rem' }}>
-            <div className="w-full h-full flex items-center justify-center">
+          <div className="flex-1 flex items-center justify-center p-4 form-container" style={{ paddingTop: '3rem' }}>
+            <div className="w-full h-full flex items-center justify-center form-content">
               <ContactUs />
             </div>
           </div>
