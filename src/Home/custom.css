@@ -60,7 +60,7 @@ img.overlay2 {
 
 
 
-.responsive-container {
+.responsive-container3 {
     position: relative;
 }
 
@@ -69,7 +69,7 @@ img.overlay2 {
     z-index: 1;
 }
 
-.responsive-image {
+.responsive-image3 {
     z-index: 1;
     max-width: 85%;
     max-height: 85%;
@@ -125,24 +125,25 @@ html,
         border-radius: 8px;
     }
 
-    .responsive-image {
+    .responsive-image3 {
         width: 50%;
+        margin-left: 2%;
     }
 
-    .responsive-container {
+    .responsive-container3 {
         flex-direction: column;
         align-items: center;
     }
 }
 
 @media (max-width: 840px) {
-    .responsive-image {
+    .responsive-image3 {
         width: 55%;
     }
 }
 
 @media (max-width: 768px) {
-    .responsive-image {
+    .responsive-image3 {
         width: 60%;
     }
 
@@ -172,8 +173,9 @@ html,
 }
 
 @media (max-width: 681px) {
-    .responsive-image {
+    .responsive-image3 {
         width: 60%;
+        margin-left: 5%;
     }
 
     img.overlay {
@@ -196,8 +198,10 @@ html,
 }
 
 @media (max-width: 607px) {
-    .responsive-image {
+    .responsive-image3 {
         width: 70%;
+        margin-left: 5%;
+
     }
 
     img.overlay {
@@ -223,7 +227,7 @@ html,
 
 }
 
-@media (max-width: 548px) {
+@media (max-width: 549px) {
 
     img.overlay {
         top: calc(40% - 4rem);
@@ -260,11 +264,12 @@ html,
         border-radius: 8px;
     }
 
-    .responsive-image {
-        width: 80%
+    .responsive-image3 {
+        width: 80%;
+        margin-left: 7%;
     }
 
-    .responsive-container {
+    .responsive-container3 {
         flex-direction: column;
         align-items: center;
     }

@@ -11,7 +11,7 @@ import emily from '../Assets/page_16.png';
 import award from '../Assets/awards.png'
 import gemmyMain from '../Assets/gemmys-white.png'
 import empressOpac from '../Assets/empress-transparent.png'
-import OakEquity from '../Assets/Equity.png'
+import OakEquity from '../Assets/rsz_1equityoak.png'
 
 const About: React.FC = () => {
     return (
@@ -90,7 +90,7 @@ const About: React.FC = () => {
                 className="w-full bg-cover flex items-center justify-center border-4 border-black"
                 style={{ height: '8rem', backgroundImage: `url(https://as1.ftcdn.net/v2/jpg/05/43/37/82/1000_F_543378228_geBD4iXXM47ixrsXVZmWb74ZfYVMgQ3j.jpg)` }}
             >
-                <div className="text-white text-center text-5xl font-josefin text-shadow">
+                <div className="text-white text-center text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl font-josefin font-josefin text-shadow">
                     Empress Awards
                 </div>
             </div>

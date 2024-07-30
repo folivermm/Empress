@@ -43,7 +43,7 @@ const Home: React.FC = () => {
         <Link to="/Product" style={{ display: 'flex', alignItems: 'center', height: '100%', marginLeft: '5rem' }}>
           <img src={gemmyLogo} alt="Gemmy's Logo" className="h-full object-contain" />
         </Link>
-        <div className="absolute left-1/2 transform -translate-x-1/2 text-white text-center text-5xl font-josefin text-shadow">
+        <div className="absolute left-1/2 transform -translate-x-1/2 text-white text-center text-4xl lg:text-4xl xl:text-6xl font-josefin text-shadow">
           Gemmy's Locations
         </div>
         <img src={gemmy} alt="Gemmy's" className="ml-auto h-full object-contain mr-4" />
@@ -56,13 +56,13 @@ const Home: React.FC = () => {
           className="w-full bg-cover flex items-center justify-center border-4"
           style={{ height: '10rem', borderColor: '#0EA5E9', backgroundImage: `url(https://www.shutterstock.com/image-vector/seamless-background-angled-white-paper-600nw-2232300125.jpg)` }}
         >
-          <div className="text-white text-center text-6xl font-josefin text-shadow">
+          <div className="text-white text-center  font-bold text-5xl lg:text-5xl xl:text-7xl font-poppinsfont-josefin text-shadow">
             Contact
           </div>
         </div>
-        <div className="flex flex-1 w-full responsive-container">
+        <div className="flex flex-1 w-full responsive-container3">
           <div className="flex-1 flex items-center justify-center relative p-4 image-container" style={{ paddingTop: '7rem' }}>
-            <img src={soloStand} alt="Solo Stand" className="responsive-image" />
+            <img src={soloStand} alt="Solo Stand" className="responsive-image3" />
           </div>
           <div className="flex-1 flex items-center justify-center p-4 form-container" style={{ paddingTop: '3rem' }}>
             <div className="w-full h-full flex items-center justify-center form-content">

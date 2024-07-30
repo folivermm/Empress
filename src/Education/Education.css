@@ -1,0 +1,247 @@
+/* Ensure Poppins font is applied */
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.responsive-container {
+    background-color: #343a40;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Responsive heading and paragraph styles */
+.responsive-heading,
+.responsive-paragraph {
+    font-size: 0.5rem;
+}
+
+.responsive-image {
+    height: 10rem;
+    width: auto;
+    margin-right: 0;
+}
+
+.dosage-image {
+    width: 7rem;
+    height: auto;
+    margin-top: 6rem;
+    margin-left: 5rem;
+}
+
+.syringe-rso-image {
+    height: 12rem;
+    width: 7rem;
+    margin-left: 5rem;
+}
+
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    /* Prevents the images from shrinking */
+}
+
+.responsive-container-rso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-left: -2rem;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 90%;
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /* Always use row direction */
+}
+
+@media (min-width: 485px) {
+
+    .responsive-heading,
+    .responsive-paragraph {
+        font-size: 0.5rem;
+    }
+
+    .responsive-image {
+        height: 10rem;
+        margin-right: .7rem;
+
+    }
+
+    .dosage-image {
+        width: 7rem;
+        margin-top: 2rem;
+
+    }
+
+    .syringe-rso-image {
+        height: 12rem;
+        width: 7rem;
+    }
+
+    .responsive-container-rso {
+        margin-left: -1rem;
+    }
+}
+
+@media (min-width: 540px) {
+
+    .responsive-heading,
+    .responsive-paragraph {
+        font-size: 0.55rem;
+    }
+
+    .responsive-image {
+        height: 12rem;
+        margin-right: .5rem;
+    }
+
+    .dosage-image {
+        width: 7rem;
+        margin-top: 2rem;
+
+    }
+
+    .syringe-rso-image {
+        height: 12rem;
+        width: 7rem;
+    }
+
+    .responsive-container-rso {
+        margin-left: -1rem;
+    }
+}
+
+@media (min-width: 675px) {
+
+    .responsive-heading,
+    .responsive-paragraph {
+        font-size: 0.65rem;
+    }
+
+    .responsive-image {
+        height: 14rem;
+    }
+
+    .dosage-image {
+        width: 9rem;
+        margin-top: 3rem;
+    }
+
+    .syringe-rso-image {
+        height: 15rem;
+        width: 9rem;
+    }
+
+    .responsive-container-rso {
+        margin-left: -1rem;
+    }
+}
+
+@media (min-width: 747px) {
+
+    .responsive-heading,
+    .responsive-paragraph {
+        font-size: 0.7rem;
+    }
+
+    .responsive-image {
+        height: 16rem;
+    }
+
+    .dosage-image {
+        width: 11rem;
+    }
+
+    .syringe-rso-image {
+        height: 18rem;
+        width: 11rem;
+    }
+
+    .responsive-container-rso {
+        margin-left: -1rem;
+    }
+}
+
+
+@media (min-width: 850px) {
+    .responsive-image {
+        height: 18rem;
+    }
+
+    .dosage-image {
+        width: 14rem;
+    }
+
+    .syringe-rso-image {
+        height: 24rem;
+        width: 14rem;
+    }
+
+    .responsive-container-rso {
+        margin-left: 5rem;
+    }
+}
+
+@media (min-width: 895px) {
+    .responsive-image {
+        height: 20rem;
+    }
+
+
+    .responsive-heading,
+    .responsive-paragraph {
+        font-size: 0.75rem;
+    }
+
+    .dosage-image {
+        width: 19rem;
+    }
+
+    .syringe-rso-image {
+        height: 26rem;
+        width: 19rem;
+    }
+
+    .responsive-container-rso {
+        margin-left: 5rem;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    .responsive-image {
+        height: 23rem;
+    }
+
+    .dosage-image {
+        width: 19rem;
+        height: auto;
+        margin-top: 6rem;
+    }
+
+    .syringe-rso-image {
+        height: 26rem;
+        width: 19rem;
+    }
+
+    .responsive-container-rso {
+        margin-left: 5rem;
+    }
+}

@@ -9,10 +9,10 @@ export default function Footer() {
     return (
         <footer className="footer w-full bg-gray-800">
             <div className="footer-icons">
-                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/empress.extracts/" target="_blank" rel="noopener noreferrer">
                     <img src={insta} alt="Instagram" className="footer-icon footer-icon-insta" />
                 </a>
-                <Link to="/gemmys">
+                <Link to="/Product">
                     <img src={gemmy} alt="Gemmy's Logo" className="footer-icon" />
                 </Link>
                 <Link to="/">

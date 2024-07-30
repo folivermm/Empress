@@ -22,7 +22,7 @@
     margin: 0 auto;
 }
 
-.image-container {
+.image-container4 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,7 +103,6 @@
     margin-top: 0.5rem;
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Add shadow to button */
     width: 10rem;
 }
 
@@ -114,4 +113,127 @@
     /* Increase shadow on hover */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     /* Maintain shadow on hover */
+}
+
+@media (max-width: 938px) {
+    .text-container {
+        font-size: 0.875rem;
+    }
+
+    .text-container h3 {
+        font-size: .875rem;
+    }
+
+    .education-button {
+        font-size: 0.875rem;
+        padding: 0.4rem;
+        width: 8rem;
+
+    }
+
+    .more-info-container {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 832px) {
+    .text-container {
+        font-size: 0.775rem;
+    }
+
+    .text-container h3 {
+        font-size: .775rem;
+    }
+
+    .education-button {
+        font-size: 0.775rem;
+        padding: 0.4rem;
+    }
+
+    .more-info-container {
+        margin-top: 1.3rem;
+    }
+}
+
+@media (max-width: 732px) {
+    .text-container {
+        font-size: 0.675rem;
+    }
+
+    .text-container h3 {
+        font-size: .675rem;
+    }
+
+    .education-button {
+        font-size: 0.675rem;
+        padding: 0.4rem;
+        width: 7rem;
+    }
+
+    .more-info-container {
+        margin-top: 1.3rem;
+    }
+}
+
+@media (max-width: 632px) {
+    .text-container {
+        font-size: 0.575rem;
+    }
+
+    .text-container h3 {
+        font-size: .575rem;
+    }
+
+    .education-button {
+        font-size: 0.575rem;
+        padding: 0.3rem;
+        width: 5rem;
+    }
+
+    .more-info-container {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 532px) {
+    .text-container {
+        font-size: 0.475rem;
+        margin-left: -2.5rem;
+    }
+
+    .text-container h3 {
+        font-size: .475rem;
+    }
+
+    .education-button {
+        font-size: 0.475rem;
+        padding: 0.2rem;
+        width: 5rem;
+
+    }
+
+    .more-info-container {
+        margin-top: .1rem;
+    }
+}
+
+@media (max-width: 432px) {
+    .text-container {
+        font-size: 0.375rem;
+    }
+
+    .text-container h3 {
+        font-size: .375rem;
+    }
+
+    .education-button {
+        font-size: 0.375rem;
+        padding: 0.2rem;
+        width: 5rem;
+
+    }
+
+    .more-info-container {
+        margin-top: .1rem;
+    }
 }

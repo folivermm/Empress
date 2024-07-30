@@ -49,7 +49,7 @@
     height: 100%;
     width: 100%;
     position: relative;
-    margin-top: 14rem;
+    margin-top: 10rem;
     /* Move the entire content down */
 }
 
@@ -73,15 +73,13 @@
     max-width: 32%;
     max-height: 32%;
     position: absolute;
-    top: -2.4rem;
+    /* top: -2.2rem; */
     /* Adjust to move the syringe behind the gemFrGrn */
     z-index: 1;
 }
 
 .center-image2 {
-
-    margin-top: 9.68rem;
-    /* Adjust to move the gemFrGrn image down */
+    /* margin-top: 12.3rem; */
     z-index: 2;
 }
 
@@ -112,11 +110,131 @@
 .right-background2 {
     right: 0;
     background-color: #faa957;
-    /* Equivalent to bg-yellow-200 */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    /* Add padding to the content */
+}
+
+@media (max-width: 1370px) {
+    .syringe-image2 {
+        max-width: 31%;
+        max-height: 31%;
+        top: .4rem;
+    }
+
+    .center-image2 {
+        margin-top: 12.4rem;
+    }
+}
+
+
+/* 
+@media (max-width: 1262px) {
+    .syringe-image2 {
+        max-width: 27%;
+        max-height: 27%;
+        top: 2.3rem;
+    }
+} */
+
+
+@media (max-width: 1120px) {
+    .syringe-image2 {
+        max-width: 27%;
+        max-height: 27%;
+        top: 2rem;
+    }
+}
+
+@media (max-width: 915px) {
+    .syringe-image2 {
+        max-width: 24%;
+        max-height: 24%;
+        top: 3.2rem;
+    }
+
+    .right-header2 {
+        font-size: 1.2rem;
+        margin-bottom: 12rem;
+    }
+
+    .left-header2 {
+        font-size: 1.2rem;
+        margin-bottom: 12rem;
+    }
+}
+
+@media (max-width: 849px) {
+    .syringe-image2 {
+        max-width: 22%;
+        max-height: 22%;
+        top: 4rem;
+    }
+}
+
+@media (max-width: 766px) {
+    .syringe-image2 {
+        max-width: 18%;
+        max-height: 18%;
+        top: 5.5rem;
+    }
+
+    .right-header2 {
+        font-size: .8rem;
+        margin-bottom: 6rem;
+    }
+
+    .left-header2 {
+        font-size: .8rem;
+        margin-bottom: 6rem;
+    }
+}
+
+
+@media (max-width: 625px) {
+    .syringe-image2 {
+        max-width: 15%;
+        max-height: 15%;
+        top: 6.7rem;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .syringe-image2 {
+        max-width: 13%;
+        max-height: 13%;
+        top: 7.7rem;
+    }
+
+    .right-header2 {
+        margin-bottom: 10rem;
+    }
+
+    .left-header2 {
+        margin-bottom: 10rem;
+    }
+
+    .center-image2 {
+        margin-top: 12.5rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .syringe-image2 {
+
+        top: 7.8rem;
+    }
+
+    .right-header2 {
+        font-size: .6rem;
+    }
+
+    .left-header2 {
+        font-size: .6rem;
+    }
 }

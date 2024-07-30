@@ -22,6 +22,16 @@
     width: 14%;
 }
 
+.bottom-left img.oak-equity {
+    width: 10%;
+}
+
+.oak-equity {
+    margin-top: 1.2rem;
+    width: 6.5rem;
+    height: 6.5rem;
+}
+
 .smaller-container {
     position: absolute;
     bottom: -3.5rem;
@@ -80,10 +90,16 @@
 
 }
 
+
+
 @media (max-width: 1222px) {
 
     .smaller-container {
         font-size: 0.7rem;
+    }
+
+    .bottom-left img.oak-equity {
+        width: 10%;
     }
 }
 
@@ -93,6 +109,10 @@
         font-size: .9rem;
         line-height: 1.5rem;
     }
+
+    .smaller-container {
+        bottom: -4.3rem;
+    }
 }
 
 
@@ -101,11 +121,38 @@
         font-size: .83rem;
         line-height: 1.5rem;
     }
+
+    .bottom-left img.oak-equity {
+        width: 9%;
+    }
 }
 
 @media (max-width: 1069px) {
     .smaller-container {
         font-size: .65rem;
+    }
+
+    .bottom-left img.oak-equity {
+        width: 8%;
+    }
+}
+
+
+@media (max-width: 1060px) {
+    .bottom-left img.oak-equity {
+        width: 0;
+    }
+
+    .smaller-container {
+        right: 5rem;
+    }
+}
+
+
+@media (max-width: 1020px) {
+
+    .bottom-left img.oak-equity {
+        width: 0;
     }
 }
 
@@ -114,6 +161,8 @@
         font-size: .83rem;
         line-height: 1.4rem;
     }
+
+
 }
 
 @media (max-width: 992px) {
@@ -132,7 +181,7 @@
 
 @media (max-width: 934px) {
     .smaller-container {
-        font-size: .6rem;
+        font-size: .57rem;
     }
 }
 
@@ -150,7 +199,7 @@
     }
 
     .smaller-container {
-        font-size: 0.5rem;
+        font-size: 0.57rem;
     }
 }
 
@@ -174,6 +223,10 @@
         font-size: .65rem;
         line-height: 1.3rem;
     }
+
+    .smaller-container {
+        font-size: 0.5rem;
+    }
 }
 
 
@@ -185,9 +238,6 @@
         line-height: 1.3rem;
     }
 
-    .smaller-container {
-        right: 1.5rem;
-    }
 }
 
 @media (max-width: 769px) {
@@ -230,7 +280,12 @@
 @media (max-width: 683px) {
     .responsive-text p {
         font-size: .64rem;
-        line-height: 1.2rem;
+        line-height: 1rem;
+    }
+
+    .smaller-container {
+        right: 3rem;
+        bottom: -4.2rem;
     }
 
 }
@@ -245,12 +300,8 @@
 
 @media (max-width: 622px) {
     .responsive-text p {
-        font-size: .57rem;
-        line-height: 1rem;
-    }
-
-    .smaller-container {
-        right: 1rem;
+        font-size: .6rem;
+        line-height: .9rem;
     }
 }
 
@@ -263,8 +314,8 @@
 
 @media (max-width: 579px) {
     .responsive-text p {
-        font-size: .55rem;
-        line-height: .9rem;
+        font-size: .6rem;
+        line-height: .8rem;
     }
 }
 
@@ -272,13 +323,16 @@
 @media (max-width: 565px) {
     .smaller-container {
         font-size: .35rem;
-        bottom: -5rem;
+        bottom: -4.2rem;
+        right: 2rem;
     }
 }
 
 @media (max-width: 533px) {
     .smaller-container {
         font-size: .32rem;
+        bottom: -4.2rem;
+        right: 2rem;
     }
 
     .award-text {
@@ -290,18 +344,23 @@
 @media (max-width: 493px) {
     .smaller-container {
         font-size: .25rem;
+        bottom: -4.2rem;
+        right: 2.5rem;
+
     }
 
     .responsive-text p {
         font-size: .5rem;
-        line-height: .9rem;
+        line-height: .75rem;
     }
 }
 
 @media (max-width: 457px) {
     .responsive-text p {
         font-size: .5rem;
-        line-height: .8rem;
+        line-height: .75rem;
+        bottom: -4.2rem;
+        right: 2rem;
     }
 
     .smaller-container {

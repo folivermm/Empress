@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
                 className="w-full bg-cover flex items-center justify-center border-4 "
                 style={{ height: '10rem', borderColor: '#cbdaaa', backgroundImage: `url(${heartsG})` }}
             >
-                <div className=" text-center text-7xl font-josefin text-shadow" style={{ color: '#cbdaaa' }} >
+                <div className="text-center font-bold text-5xl lg:text-5xl xl:text-7xl font-josefin text-shadow" style={{ color: '#cbdaaa' }} >
                     Contact
                 </div>
             </div>
