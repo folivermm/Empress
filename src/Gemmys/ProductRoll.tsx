@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import gemFrGrn from '../Assets/front-gemmy-grn.jpg';
@@ -15,9 +15,9 @@ import 'swiper/css/scrollbar';
 // Import your own styles
 import './ProductRoll.css';
 
-const ProductRoll: React.FC = () => {
+const ProductRoll = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div className="swiper-container h-screen w-screen">
+    <div className="swiper-container h-screen w-screen" ref={ref}>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={0}
@@ -86,6 +86,6 @@ const ProductRoll: React.FC = () => {
       </Swiper>
     </div>
   );
-};
+});
 
 export default ProductRoll;

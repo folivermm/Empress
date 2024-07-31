@@ -2,16 +2,13 @@ import React from 'react';
 import baloo from '../Assets/baloo.jpg';
 import gemmy from '../Assets/Gemmys.png';
 import gemmyLogo from '../Assets/gemmys-transparent.png';
-
 import Nav from '../Nav/Nav';
 import Maps from '../Map/Maps';
 import Footer from '../Footer/Footer';
 import ProductRoll from './ProductRoll';
 import Dosage from './Dosage';
 
-{/* <p>Gemmy's is not for consumption by animals.</p> */ }
-
-const Gemmy: React.FC = () => {
+const Gemmy: React.FC<{ productRollRef: React.RefObject<HTMLDivElement> }> = ({ productRollRef }) => {
     return (
         <div>
             <Nav />
@@ -22,7 +19,7 @@ const Gemmy: React.FC = () => {
                 </div>
             </div>
             <div>
-                <ProductRoll />
+                <ProductRoll ref={productRollRef} />
                 <Dosage />
             </div>
             <div className="relative w-full bg-lime-100 flex items-center border-4" style={{ height: '10rem', borderColor: 'white' }}>
