@@ -63,30 +63,40 @@ const Education: React.FC = () => {
                     </p>
                     <br />
                     <p className="text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">
-                        Depending on the severity of the medical condition there are different dosing expectations for different ailments. The Rick Simpson Method outlines his personal prescription for what cured his cancer and what he has shared with others.
-                    </p>
+                        Depending on the severity of the medical condition there are different dosing expectations for different ailments.The Rick Simpson Method outlines a prescribed dosage as an alternative medicine for treating cancer.                     </p>
                 </div>
             </div>
             <div className="responsive-container-rso">
                 <div className="content-wrapper p-6">
                     <div className="flex-container items-start space-x-0 md:space-x-6">
                         <div className="text-white p-4 md:w-[50%] font-poppins">
-                            <h1 className="text-sm sm:text-xl md:text-2xl font-bold">The Rick Simpson Method</h1>                            <br />
+                            <h1 className="text-sm sm:text-xl md:text-2xl font-bold">The Rick Simpson Method</h1>
+                            <br />
                             <p className="text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg"> For medical patients, it is always recommended to consult your physician before stopping or starting any new treatment regimen. However, as there are many physicians who refuse to discuss medical cannabis as a course of treatment, many people proceed with the Rick Simpson method at their own discretion.</p>
                             <br />
-                            <h2 className="font-bold text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg"> The end goal: gradually consume 60 grams of cannabis oil over the course of a 90-day period.</h2>
+                            <h2 className="font-bold text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">The end goal: gradually consume 60-90 grams of cannabis oil over the course of a 60-90 day period. Ideally ingesting one gram of Gemmy’s a day.</h2>
+                            <br />
+                            <p className="font-italic text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">This regimen is intended to slowly build up the patient's tolerance and ultimately activate the endocannabinoid system. The timeline is based on each individual's preferred rate of reaching the goal of one gram a day.</p>
                             <br />
                             <h2 className="font-bold text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">Week 1:</h2>
                             <br />
-                            <p className="text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">First dose ¼ drop. Three equal doses each day of a half grain of rice or less every 8 hours. For a slow start, half a rice grain at night then double after 4 days.</p>
+                            <p className="text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">First dose sesame seed size drop before bed.</p>
                             <br />
-                            <h2 className="font-bold text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">Week 2-5:</h2>
+                            <h2 className="font-bold text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">Week 2:</h2>
                             <br />
-                            <p className="text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">Double your dose every four days. (the average person will take 3-5 weeks to reach the full 1 gram per day dose)</p>
+                            <p className="text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">Increase dose size to rice size size grain drop before bed.</p>
                             <br />
-                            <h2 className="font-bold text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">Weeks 5-12: </h2>
+                            <h2 className="font-bold text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">Week 3:</h2>
                             <br />
-                            <p className="text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg"> 8-9 rice-sized drops every eight hours. (1 gram RSO daily) until you have consumed 60 grams total. </p>
+                            <p className="text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">Continue the nightly regime and start taking a small rice sized dose in the morning with breakfast.</p>
+                            <br />
+                            <h2 className="font-bold text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">Week 4:</h2>
+                            <br />
+                            <p className="text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">Begin dosing small rice size grain drops every eight hours.</p>
+                            <br />
+                            <h2 className="font-bold text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">Week 5-12:</h2>
+                            <br />
+                            <p className="text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">Double the dosage from each past week and consume that amount every 8 hours until 1 gram of RSO/Gemmy’s is reached and consumed on a daily basis.</p>
                         </div>
                         <div className="image-container flex flex-col items-center pt-20 md:pt-0">
                             <img
@@ -122,7 +132,7 @@ const Education: React.FC = () => {
                         <br />
                         <h2 className="font-bold text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">Oral Application</h2>
                         <br />
-                        <p className="text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">Oral ingestion is the most common and easiest method of ingesting Gemmy’s Oil. It can be consumed raw, cooked, or frozen. Most people cite a bitter or slightly unpleasant taste, so it is suggested to consume with something else to mask the taste. Mixing it with hot oil for cooking recipes or adding it directly to a hot pan with butter or oil are common methods. Among the most frequently cited methods are filling an empty gelatin capsule with your pre-measured dose, freezing it between two pieces of parchment paper and consuming like a frozen pill, or mixing a pre-measured dose with your meals.</p>
+                        <p className="text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">Oral ingestion is the most common and easiest method of ingesting Gemmy’s Oil. It can be consumed raw, cooked, or frozen. Simply add it to a piece of food like a cracker or berry to mask the taste. Mix it with warm oil or butter for cooking recipes. Among the most frequently cited methods are filling an empty gelatin capsule with your pre-measured dose, freezing pre-measured doses on a piece of parchment paper and consuming it like a frozen pill, or mixing a pre-measured dose with your meals.</p>
                         <br />
                         <h2 className="font-bold text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">Tincture Preparation Using RSO</h2>
                         <br />
@@ -142,15 +152,16 @@ const Education: React.FC = () => {
                     <div className="text-white p-4 w-full max-w-3xl font-poppins">
                         <h2 className="font-bold text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">Topical Application</h2>
                         <br />
-                        <p className="text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">Topical application refers to the application to your body surfaces like skin or mucous membranes. The process works because Gemmy’s is absorbed through your skin and reaches the site of pain or inflammation without going through the body’s system. This application is more preferred by people for pain management and control or those who may have difficulty ingesting medication or are prone to vomiting.</p>
+                        <p className="text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">Topical application refers to the application to your body surfaces like skin or mucous membranes. The process works because Gemmy’s is absorbed through your skin and reaches the site of pain or inflammation without going through the body’s system. Mix desired amount of oil with favorite lotion or oil to make topical. Topically applied Gemmy’s has been used to heal scarring, sun spots, skin cancers and many other external skin issues. Apply oil directly to the affected skin area and cover with bandage; reapply to keep continuous coverage. Avoid putting Gemmy’s on open wounds. </p>
                         <br />
                         <h2 className="font-bold text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">Inhalation</h2>
                         <br />
-                        <p className="text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg" >Because Gemmy’s is so potent this is not the preferred method of consuming Gemmy’s. Many people use this method because it is the most bio-available method, meaning it is the most readily available in your body after consuming it. When you smoke or vape the active components are immediately triggered and start to take effect within minutes. Other methods take 30 minutes to over an hour for the effects to become noticeable.</p>
+                        <p className="text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg" >Because Gemmy’s is so potent this is not the preferred method of consuming Gemmy’s. This oil is already decarboxylated, so the cannabinoids are already activated. When you smoke or vape the active components are immediately triggered and start to take effect within minutes. Other methods take 30 minutes to over an hour for the effects to become noticeable.
+                        </p>
                         <br />
                         <h2 className="font-bold text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">Suppository</h2>
                         <br />
-                        <p className="text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">This method is primarily for people who are more medically fragile, have muscular conditions or are unable to chew or eat properly. Through this method the oil melts in the rectal cavity and is absorbed through the bloodstream. Gemmy’s Oil should be treated like any other suppository medication. Depending on the suppository product you are using, the medium may be different. Place your pre-measured dose of Gemmy’s in the suppository medium and use as directed by the suppository manufacturer.</p>
+                        <p className="text-xxs xxs:text-xxs xs:text-xs sm:text-sm md:text-md lg:text-lg">This method is primarily for people who are more medically fragile, have muscular conditions, or are unable to eat properly. Through this method, the oil melts in the rectal cavity and is absorbed through the bloodstream. Many people use this method because it is the most bioavailable method, meaning it is the most readily available in your body after consuming it. There are various ways to make suppositories. We recommend that you do your own research on suppository preparation and usage. Place your pre-measured dose of Gemmy’s in the suppository medium and divide the amount of Gemmy’s by the number of suppositories you intend to make. Use as directed by the suppository manufacturer.</p>
                         <br />
                     </div>
                 </div>

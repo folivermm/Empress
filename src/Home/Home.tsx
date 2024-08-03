@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './custom.css';
-import { ContactUs } from '../ContactUs';
+import { ContactUs } from '../Contact/ContactUs';
 import Nav from '../Nav/Nav';
 import Maps from '../Map/Maps';
 import VideoRoll from './VideoRoll';

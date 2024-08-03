@@ -27,8 +27,7 @@ const About: React.FC = () => {
             >
                 <div className="responsive-text text-white">
                     <p>
-                        CEO and founder Emily Scarbrough created Empress Extracts in 2009. Empress Extracts is a legacy-operated, award-winning cannabis extraction company and has since been servicing the California medical cannabis market. The company has been producing a diverse, yet focused, array of medicinal cannabinoid extracts for the patients of the San Francisco Bay Area and beyond. Empress has a simple goal; to build a business around the extraction and isolation of the active medicinal compounds of the very best cannabis on earth, while improving the very same earth and people in doing so.
-                    </p>
+                        CEO and founder Emily Scarbrough created Empress Extracts in 2009. Empress Extracts is a California legacy-operated, award-winning cannabis extraction company that has since produced  a diverse, yet focused, array of medicinal and recreational cannabinoid extracts. At Empress Extracts, we are dedicated to providing high-quality medicine at an affordable price, with a genuine commitment to the well-being of the patients who rely on our products.                    </p>
                     <br />
                     <p>
                         The heart and focus of Empress Extract products is Gemmy’s Full Extract Cannabis Oil. Full Extract Oil, also known as RSO, is a full-spectrum plant extract that has been used with success to treat many ailments, including but not limited to treating cancer, epilepsy, seizures, MS, chronic pain, sleep problems, arthritis, glaucoma, anxiety, depression, PTSD, TBI headaches, and so much more.

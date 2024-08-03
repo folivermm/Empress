@@ -2,7 +2,7 @@ import React from 'react';
 import farm from '../Assets/contact-farm.png';
 import '../Nav/Nav.css';
 import Nav from '../Nav/Nav'
-import { ContactUs } from '../ContactUs';
+import { ContactUs } from '../Contact/ContactUs'
 import Footer from '../Footer/Footer'
 import heartsG from '../Assets/green-hearts.jpg';
 

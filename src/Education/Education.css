@@ -70,6 +70,10 @@
     /* Always use row direction */
 }
 
+.font-italic {
+    font-style: italic;
+}
+
 @media (min-width: 485px) {
 
     .responsive-heading,
