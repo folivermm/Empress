@@ -73,7 +73,7 @@
     max-width: 32%;
     max-height: 32%;
     position: absolute;
-    /* top: -2.2rem; */
+    margin-top: .4rem;
     /* Adjust to move the syringe behind the gemFrGrn */
     z-index: 1;
 }
